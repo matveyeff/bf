@@ -1,7 +1,8 @@
 .logo {
 	display: flex;
-	width: 248px;
 	&__icon {
-		fill: $white
+		fill: $white;
+		width: 11.75rem;
+		height: 2.1875rem;
 	}
 }

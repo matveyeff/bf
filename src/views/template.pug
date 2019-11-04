@@ -25,7 +25,6 @@ html(lang=lang)
 
 		title #{title}
 		block links
-			link(href="https://fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet")
 			link(rel="stylesheet", href=csspath + '/main.min.css')
 	body
 		include includes/_header.pug
@@ -37,5 +36,7 @@ html(lang=lang)
 
 		block scripts
 
-			script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js")
+			if jQuery
+				script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js")
+				
 			script(src='js/script.min.js')

@@ -16,3 +16,13 @@ mixin nav(className, id='')
 		ul(class="nav__list")
 			each item in items
 				li(class="nav__item"): a(href=item.url class="nav__link")= item.title
+
+mixin socials(className)
+	- var socials= ['facebook', 'instagram', 'youtube']
+	div(class=className)
+		ul(class=className + '__list')
+			each social in socials
+				li(class=className + '__item')
+					a(href="#", class=className + '__link')
+						svg(class=className + '__icon')
+							use(xlink:href=`./img/sprite.svg#${social}`)

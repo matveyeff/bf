@@ -1,0 +1,18 @@
+.socials {
+	display: flex;
+	&__list	{
+		display: flex;
+	}
+	&__item {
+		margin-right: 1rem;
+		display: flex;
+	}
+	&__link {
+		display: flex;
+	}
+	&__icon {
+		width: 20px;
+		height: 20px;
+		fill: $white;
+	}
+}
