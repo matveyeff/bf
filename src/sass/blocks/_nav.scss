@@ -1,0 +1,12 @@
+.nav {
+	display: flex;
+	&__list	{
+		display: flex;
+	}
+	&__item {
+		margin-right: 1rem;
+	}
+	&__link {
+		color: $white;
+	}
+}

@@ -8,13 +8,15 @@ const groupMediaQueries = require('gulp-group-css-media-queries');
 const cleanCSS 					= require('gulp-clean-css');
 const autoprefixer 			= require('gulp-autoprefixer');
 
+const pug								=	require('gulp-pug');
+const prettify 					= require('gulp-html-prettify');
+
 const concat 						= require('gulp-concat');
 const uglify 						= require('gulp-uglify');
 const babel 						= require('gulp-babel');
 
 const rename 						= require('gulp-rename');
 const sourcemaps 				= require('gulp-sourcemaps');
-const replace 					= require('gulp-replace');
 const del 							= require('del');
 const plumber 					= require('gulp-plumber');
 const browserSync 			= require('browser-sync').create();
@@ -47,14 +49,15 @@ function styles() {
 }
 
 function htmls() {
-	return gulp.src(paths.src + '*.html')
+	return gulp.src(paths.src + 'views/pages/**/*.pug')
 		.pipe(plumber())
-		.pipe(replace(/\n\s*<!--DEV[\s\S]+?-->/gm, ''))
+		.pipe(pug({ pretty: true }))
+		.pipe(prettify({indent_char: ' ', indent_size: 2}))
     .pipe(gulp.dest(paths.build));
 }
 
 function images() {
-  return gulp.src(paths.src + 'img/*.{jpg,jpeg,png,gif,svg}')
+  return gulp.src(paths.src + 'img/**/*.{jpg,jpeg,png,gif,svg,ico}')
     .pipe(imagemin())
     .pipe(gulp.dest(paths.build + 'img/'));
 }
@@ -101,9 +104,9 @@ function clean() {
 
 function watch() {
   gulp.watch(paths.src + 'sass/**/*.scss', styles);
-  gulp.watch(paths.src + '*.html', htmls);
+  gulp.watch(paths.src + 'views/pages/**/*.pug', htmls);
   gulp.watch(paths.src + 'js/*.js', scripts);
-  gulp.watch(paths.src + 'img/*.{jpg,jpeg,png,gif,svg}', images);
+  gulp.watch(paths.src + 'img/**/*.{jpg,jpeg,png,gif,svg,ico}', images);
   gulp.watch(paths.src + 'svg/*.svg', svgSprite);
 }
 

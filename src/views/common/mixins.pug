@@ -1,0 +1,18 @@
+mixin icon(iconName, iconClass)
+	svg(class=`${iconClass}`)
+		use(xlink:href=`./img/sprite.svg#${iconName}`)
+
+mixin nav(className, id='')
+	-
+		var items = [
+			{ url:'./about.html', title:'О компании' },
+			{ url:'./brands.html', title:'Бренды' },
+			{ url:'./partnership.html', title:'Сотрудничество' },
+			{ url:'./partners.html', title:'Партнеры' },
+			{ url:'./marketing.html', title:'Маркетинг' },
+			{ url:'./contacts.html', title:'Контакты' },
+			]
+	nav(class="" + className, id='nav')
+		ul(class="nav__list")
+			each item in items
+				li(class="nav__item"): a(href=item.url class="nav__link")= item.title
