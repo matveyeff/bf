@@ -25,6 +25,8 @@ const svgstore 					= require('gulp-svgstore');
 const svgmin 						= require('gulp-svgmin');
 const imagemin 					= require('gulp-imagemin');
 
+const rsync 					  = require('gulp-rsync');
+
 const paths =  {
   src: './src/',        // paths.src
   build: 'build/'      	// paths.build
@@ -102,6 +104,21 @@ function clean() {
   return del('build/')
 }
 
+function deploy() {
+  return gulp.src('build/**')
+  .pipe(rsync({
+    root: 'build',
+    hostname: '9162345584@beautyforce.ru',
+    destination: 'domains/beautyforce.ru/',
+    include: ['*.htaccess'], // Includes files to deploy
+		exclude: ['**/Thumbs.db', '**/*.DS_Store'], // Excludes files from deploy
+		recursive: true,
+		archive: true,
+		silent: false,
+		compress: true
+  }))
+}
+
 function watch() {
   gulp.watch(paths.src + 'sass/**/*.scss', styles);
   gulp.watch(paths.src + 'views/pages/**/*.pug', htmls);
@@ -129,9 +146,12 @@ exports.favicon 				= favicon;
 exports.svgSprite 			= svgSprite;
 exports.clean 					= clean;
 exports.watch 					= watch;
+exports.deploy 					= deploy;
 
 gulp.task('default', gulp.series(
   clean,
   gulp.parallel(styles, svgSprite, scripts, htmls, images, favicon, fonts),
   gulp.parallel(watch, serve)
 ));
+
+gulp.task('deploy');

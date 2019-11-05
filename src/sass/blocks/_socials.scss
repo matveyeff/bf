@@ -4,15 +4,21 @@
 		display: flex;
 	}
 	&__item {
-		margin-right: 1rem;
+		margin-right: .625rem;
 		display: flex;
+		&:last-child {
+			margin-right: 0;
+		}
 	}
 	&__link {
 		display: flex;
 	}
 	&__icon {
-		width: 20px;
-		height: 20px;
-		fill: $white;
+		width: 1rem;
+		height: 1rem;
+		fill: #7c8391;
+		&:hover {
+			fill: $white;
+		}
 	}
 }

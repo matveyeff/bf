@@ -5,11 +5,11 @@ mixin icon(iconName, iconClass)
 mixin nav(className, id='')
 	-
 		var items = [
-			{ url:'./about.html', title:'О компании' },
 			{ url:'./brands.html', title:'Бренды' },
-			{ url:'./partnership.html', title:'Сотрудничество' },
 			{ url:'./partners.html', title:'Партнеры' },
+			{ url:'./partnership.html', title:'Сотрудничество' },
 			{ url:'./marketing.html', title:'Маркетинг' },
+			{ url:'./about.html', title:'О компании' },
 			{ url:'./contacts.html', title:'Контакты' },
 			]
 	nav(class="" + className, id='nav')
@@ -18,11 +18,16 @@ mixin nav(className, id='')
 				li(class="nav__item"): a(href=item.url class="nav__link")= item.title
 
 mixin socials(className)
-	- var socials= ['facebook', 'instagram', 'youtube']
+	-
+		var socials= [
+			{ title:'instagram', url:'https://www.instagram.com/beautyforce.ru' },
+			{ title:'facebook', url:'https://www.facebook.com/gloderm' },
+			{ title:'youtube', url:'https://www.youtube.com/channel/UCclQv0cHZAxC4z-Ym6friIw' },
+			]
 	div(class=className)
 		ul(class=className + '__list')
 			each social in socials
 				li(class=className + '__item')
-					a(href="#", class=className + '__link')
+					a(href=social.url, class=className + '__link')
 						svg(class=className + '__icon')
-							use(xlink:href=`./img/sprite.svg#${social}`)
+							use(xlink:href=`./img/sprite.svg#${social.title}`)
