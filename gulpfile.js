@@ -13,7 +13,6 @@ const prettify 					= require('gulp-html-prettify');
 
 const concat 						= require('gulp-concat');
 const uglify 						= require('gulp-uglify');
-const babel 						= require('gulp-babel');
 
 const rename 						= require('gulp-rename');
 const sourcemaps 				= require('gulp-sourcemaps');
@@ -92,9 +91,6 @@ function svgSprite() {
 function scripts() {
   return gulp.src(paths.src + 'js/*.js')
     .pipe(plumber())
-    .pipe(babel({
-      presets: ['env']
-    }))
     .pipe(uglify())
     .pipe(concat('script.min.js'))
     .pipe(gulp.dest(paths.build + 'js/'))
