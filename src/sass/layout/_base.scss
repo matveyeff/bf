@@ -2,7 +2,6 @@ html {
 	position: relative;
 	min-height: 100%;
 	font-size: 16px;
-	overflow: hidden;
 	@include tablets {
 		font-size: 14px;
 	}
@@ -31,6 +30,14 @@ img, embed, object, video {
 svg {
 	max-width: 100%;
 	max-height: 100%;
+}
+
+p {
+	font-family: $text;
+	color: $dark;
+	font-weight: 300;
+	line-height: 1.5;
+	margin: .625rem 0;
 }
 
 a {
@@ -68,19 +75,20 @@ h6 {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	padding: 4.6875rem 0;
+	padding: $gutter 0;
+	background-color: $gray;
 }
 
 .title {
 	font-family: $title;
 	color: $dark;
-	font-size: 2.75rem;
-	margin-bottom: 4.6875rem;
+	font-size: 2rem;
 	line-height: 1;
+	margin-bottom: 1.5625rem;
 	&_white {
 		color: $white;
 	}
-	&_center {
+	&__center {
 		text-align: center;
 	}
 }

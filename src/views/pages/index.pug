@@ -1,15 +1,70 @@
-extends ../template.pug
+extends ../main.pug
 
 append config
 	- title = 'Главная страница'
 	- desc = 'Описание главной страницы'
 
 block content
-	.container
-		.slider
-			.slider__item
-				img.slider__img(src="img/banner-01.jpg")
-			.slider__item
-				img.slider__img(src="img/banner-02.jpg")
-			.slider__item
-				img.slider__img(src="img/banner-03.jpg")
+	section.section.hero
+		.container
+			.slider
+				.slider__item
+					img.slider__img(src="img/banner-01.jpg" alt="banner")
+				.slider__item
+					img.slider__img(src="img/banner-02.jpg" alt="banner")
+				.slider__item
+					img.slider__img(src="img/banner-03.jpg" alt="banner")
+	section.section.about
+		.container
+			h2.title Дистрибьютор косметики
+			p Дистрибьюторская компания Beauty Force была основана в 2010 году. Мы следим за тенденциями развития рынка косметики и выбираем лучшие бренды. За время своей работы мы приобрели надежных партнеров по всей России.
+			p Безусловно, основная миссия нашей компании — радовать замечательной косметикой, любимыми брендами клиентов и быть надежным партнером. Мы постоянно работаем над повышением профессионализма наших сотрудников и строим команду.
+			p На сегодняшний день в портфель компании входят более 30 брендов декоративной косметики и средства по уходу за лицом, волосами, телом и аксессуары из США, Европы, Южной Кореи. У нас есть бренды для любого сегмента рынка — масс-маркет, средний сегмент, премиальный и фармацевтический.
+	section.section.brands
+		.container
+			.brands-grid
+				ul.brands-grid__list
+					li.brands-grid__item
+						img.brands-grid__img(src="img/brandslist/dr-gloderm.png")
+					li.brands-grid__item
+						img.brands-grid__img(src="img/brandslist/3w-clinic.png")
+					li.brands-grid__item
+						img.brands-grid__img(src="img/brandslist/londaa.png")
+					li.brands-grid__item
+						img.brands-grid__img(src="img/brandslist/swarovski.png")
+					li.brands-grid__item
+						img.brands-grid__img(src="img/brandslist/catrice.png")
+					li.brands-grid__item
+						img.brands-grid__img(src="img/brandslist/essence.png")
+					li.brands-grid__item
+						img.brands-grid__img(src="img/brandslist/real-techniques.png")
+					li.brands-grid__item
+						img.brands-grid__img(src="img/brandslist/ecotools.png")
+					li.brands-grid__item
+						img.brands-grid__img(src="img/brandslist/revolution-makeup.png")
+					li.brands-grid__item
+						img.brands-grid__img(src="img/brandslist/lv.png")
+					li.brands-grid__item
+						img.brands-grid__img(src="img/brandslist/sebastian.png")
+					li.brands-grid__item
+						img.brands-grid__img(src="img/brandslist/sp.png")
+					li.brands-grid__item
+						img.brands-grid__img(src="img/brandslist/ghd.png")
+					li.brands-grid__item
+						img.brands-grid__img(src="img/brandslist/nioxin.png")
+					li.brands-grid__item
+						img.brands-grid__img(src="img/brandslist/cellmiin.png")
+					li.brands-grid__item
+						img.brands-grid__img(src="img/brandslist/elizavecca.png")
+					li.brands-grid__item
+						img.brands-grid__img(src="img/brandslist/petitfee.png")
+					li.brands-grid__item
+						img.brands-grid__img(src="img/brandslist/koelf.png")
+					li.brands-grid__item
+						img.brands-grid__img(src="img/brandslist/esthetic-house.png")
+					li.brands-grid__item
+						img.brands-grid__img(src="img/brandslist/l-sanic.png")
+				a.link(href="#") Все бренды
+	section.section.news
+		.container
+			h2.title Новости

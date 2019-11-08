@@ -1,0 +1,15 @@
+.brands-grid {
+  padding: 1rem 2rem;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  &__item {
+    flex-basis: 12%;
+  }
+  &__img {
+    filter: grayscale(1);
+  }
+}

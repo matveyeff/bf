@@ -27,12 +27,14 @@ html(lang=lang)
 		block links
 			link(rel="stylesheet", href=csspath + '/main.min.css')
 	body
-		include includes/_header.pug
+		.wrapper
+			include includes/_header.pug
+			include includes/_page-header.pug
 
-		block content
+			block content
 
-		footer
-			include includes/_footer.pug
+			footer
+				include includes/_footer.pug
 
 		block scripts
 

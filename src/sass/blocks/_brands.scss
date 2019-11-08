@@ -1,0 +1,52 @@
+.brands {
+	margin: 0 auto;
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__item {
+		flex: 1 0 32%;
+		margin-right: $gutter/2;
+		margin-bottom: $gutter/2;
+	}
+	&__link {
+		display: flex;
+		width: 100%;
+		height: 100%;
+		position: relative;
+		&::after {
+			content: '';
+			position: absolute;
+			display: flex;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,.4);
+		}
+	}
+	&__img {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding: 2rem;
+		color: $white;
+		z-index: 10;
+	}
+	&__title {
+		font-family: $title;
+		font-weight: 300;
+		font-size: 2rem;
+	}
+}

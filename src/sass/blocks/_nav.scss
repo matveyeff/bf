@@ -4,12 +4,15 @@
 		display: flex;
 	}
 	&__item {
-		margin-right: 1rem;
+		margin-right: .9375rem;
 	}
 	&__link {
 		font-family: $title;
 		font-weight: 300;
 		font-size: 1.125rem;
 		color: $white;
+		&:hover {
+			color: $gray;
+		}
 	}
 }
