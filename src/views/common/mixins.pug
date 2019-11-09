@@ -31,3 +31,20 @@ mixin socials(className)
 					a(href=social.url, class=className + '__link')
 						svg(class=className + '__icon')
 							use(xlink:href=`./img/sprite.svg#${social.title}`)
+
+mixin brands(className)
+	-
+		var brands= [
+			{ url:'brands/dr-gloderm.html', title:'Dr.Gloderm', desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum placeat nihil cumque doloremque at nisi beatae molestiae laborum. Perspiciatis pariatur ipsam nemo maiores totam officia odio fugiat nihil dolor saepe.', img:'dr-gloderm.jpg' },
+			{ url:'#link', title:'Dr.Gloderm', img:'dr-gloderm.jpg' },
+			{ url:'#link', title:'Dr.Gloderm', img:'dr-gloderm.jpg' },
+			]
+	div(class=className)
+		ul(class=className + '__list')
+			each brand in brands
+				li(class=className + '__item')
+					a(href=brand.url, class=className + '__link')
+						img(src=`img/brands/${brand.img}`, alt=`${brand.title}`, class=className + '__img')
+						div(class=className + '__content')
+							h2(class=className + '__title')= brand.title
+							span(class=className + '__desc')= brand.desc
