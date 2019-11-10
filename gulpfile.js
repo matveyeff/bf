@@ -11,6 +11,8 @@ const autoprefixer 			= require('gulp-autoprefixer');
 const pug								=	require('gulp-pug');
 const prettify 					= require('gulp-html-prettify');
 
+const Fs                = require('fs');
+
 const concat 						= require('gulp-concat');
 const uglify 						= require('gulp-uglify');
 
@@ -30,6 +32,8 @@ const paths =  {
   src: './src/',        // paths.src
   build: 'build/'      	// paths.build
 };
+
+const dataFromFile      = JSON.parse(Fs.readFileSync(paths.src + 'data/data.json'));
 
 function styles() {
 	return gulp.src(paths.src + 'sass/main.scss')
@@ -52,7 +56,7 @@ function styles() {
 function htmls() {
 	return gulp.src(paths.src + 'views/pages/**/*.pug')
 		.pipe(plumber())
-		.pipe(pug({ pretty: true }))
+		.pipe(pug({ pretty: true, locals: dataFromFile || {} }))
 		.pipe(prettify({indent_char: ' ', indent_size: 2}))
     .pipe(gulp.dest(paths.build));
 }

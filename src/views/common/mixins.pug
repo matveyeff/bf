@@ -3,27 +3,12 @@ mixin icon(iconName, iconClass)
 		use(xlink:href=`./img/sprite.svg#${iconName}`)
 
 mixin nav(className, id='')
-	-
-		var items = [
-			{ url:'./brands.html', title:'Бренды' },
-			{ url:'./partners.html', title:'Партнеры' },
-			{ url:'./partnership.html', title:'Сотрудничество' },
-			{ url:'./marketing.html', title:'Маркетинг' },
-			{ url:'./about.html', title:'О компании' },
-			{ url:'./contacts.html', title:'Контакты' },
-			]
 	nav(class="" + className, id='nav')
 		ul(class="nav__list")
-			each item in items
+			each item in nav
 				li(class="nav__item"): a(href=item.url class="nav__link")= item.title
 
 mixin socials(className)
-	-
-		var socials= [
-			{ title:'instagram', url:'https://www.instagram.com/beautyforce.ru' },
-			{ title:'facebook', url:'https://www.facebook.com/gloderm' },
-			{ title:'youtube', url:'https://www.youtube.com/channel/UCclQv0cHZAxC4z-Ym6friIw' },
-			]
 	div(class=className)
 		ul(class=className + '__list')
 			each social in socials
@@ -33,12 +18,6 @@ mixin socials(className)
 							use(xlink:href=`./img/sprite.svg#${social.title}`)
 
 mixin brands(className)
-	-
-		var brands= [
-			{ url:'brands/dr-gloderm.html', title:'Dr.Gloderm', desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum placeat nihil cumque doloremque at nisi beatae molestiae laborum. Perspiciatis pariatur ipsam nemo maiores totam officia odio fugiat nihil dolor saepe.', img:'dr-gloderm.jpg' },
-			{ url:'#link', title:'Dr.Gloderm', img:'dr-gloderm.jpg' },
-			{ url:'#link', title:'Dr.Gloderm', img:'dr-gloderm.jpg' },
-			]
 	div(class=className)
 		ul(class=className + '__list')
 			each brand in brands
@@ -47,4 +26,11 @@ mixin brands(className)
 						img(src=`img/brands/${brand.img}`, alt=`${brand.title}`, class=className + '__img')
 						div(class=className + '__content')
 							h2(class=className + '__title')= brand.title
-							span(class=className + '__desc')= brand.desc
+							span(class=className + '__desc')= brand.description
+
+mixin grid(className)
+	div(class=className)
+		ul(class=className + '__list')
+			each item in grid
+				li(class=className + '__item')
+					img(class=className + '__img', src=`img/brandslist/${item.img}`)

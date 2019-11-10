@@ -1,13 +1,15 @@
 .brands {
-	margin: 0 auto;
 	&__list {
 		display: flex;
 		flex-wrap: wrap;
 	}
 	&__item {
-		flex: 1 0 32%;
+		flex: 0 0 32%;
 		margin-right: $gutter/2;
 		margin-bottom: $gutter/2;
+		&:nth-child(3n) {
+			margin-right: 0;
+		}
 	}
 	&__link {
 		display: flex;

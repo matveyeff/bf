@@ -1,0 +1,60 @@
+{
+	"nav": [
+		{"title": "Бренды", "url": "./brands.html"},
+		{"title": "Партнеры", "url": "./partners.html"},
+		{"title": "Сотрудничество", "url": "./partnership.html"},
+		{"title": "Маркетинг", "url": "./marketing.html"},
+		{"title": "О компании", "url": "./about.html"},
+		{"title": "Контакты", "url": "./contacts.html"}
+	],
+	"socials": [
+		{"title": "instagram", "url": "https://www.instagram.com/beautyforce.ru"},
+		{"title": "facebook", "url": "https://www.facebook.com/gloderm"},
+		{"title": "youtube", "url": "https://www.youtube.com/channel/UCclQv0cHZAxC4z-Ym6friIw"}
+	],
+	"brands": [
+		{"title" : "Dr. Gloderm", "description" : "Dr. Gloderm представляет процедуры по уходу за кожей с рекомендованными дозами, которые отличают их продукты от существующих на рынке.", "url" : "dr-gloderm.html", "img" : "dr-gloderm.jpg"},
+		{"title" : "3W Clinic", "description" : "Косметика 3W Clinic – это комбинация восточных медицинских традиций и современных достижений науки.", "url" : "3w-clinic.html", "img" : "3w-clinic.jpg"},
+		{"title" : "Wella", "description" : "Немецкая компания, является одной из ведущих компаний в мире в области косметики и парфюмерии. Основанная в 1880 году, Wella AG присутствует в более чем 150 странах. Производит средства для ухода за волосами, краски для волос.", "url" : "wella.html", "img" : "wella.jpg"},
+		{"title" : "Londa", "description" : "Профессиональный салонный бренд с более чем 60-летним наследием. Коллекция продуктов для ухода за волосами, окрашивания и стайлинга создана, чтобы подчеркнуть красоту в повседневной жизни.", "url" : "londa.html", "img" : "londa.jpg"},
+		{"title" : "OPI", "description" : "Лидер индустрии профессионального ухода за ногтями. Культ цвета заложен в ДНК бренда.", "url" : "opi.html", "img" : "opi.jpg"},
+		{"title" : "Swarovski", "description" : "Swarovski AG — австрийская компания, специализирующаяся на производстве рассыпных кристаллов, украшений, кристальных фигурок и огранке синтетических и природных драгоценных камней.", "url" : "swarovski.html", "img" : "swarovski.jpg"},
+		{"title" : "Catrice", "description" : "Симбиоз красоты и моды является одним из главных преимуществ бренда CATRICE. Бренд, вдохновленный трендами мировых столиц моды!", "url" : "catrice.html", "img" : "catrice.jpg"},
+		{"title" : "Essence", "description" : "Декоративная косметика essence обладает средней пигментированностью – поэтому она не загрязняет поры и не выглядит как маска.", "url" : "essence.html", "img" : "essence.jpg"},
+		{"title" : "Real Techniques", "description" : "Легендарный бренд кистей и аксессуаров для макияжа, созданный сестрами Николь и Саманта Чепмен в коллаборации с Paris Presents.", "url" : "real-techniques.html", "img" : "real-techniques.jpg"},
+		{"title" : "EcoTools", "description" : "Более десяти лет Paris Presents с гордостью продолжают выпускать аутентичные, полностью натуральные продукты, которые помогают женщинам чувствовать себя по-настоящему красивыми.", "url" : "ecotools.html", "img" : "ecotools.jpg"},
+		{"title" : "Revolution Makeup", "description" : "Амбициозный бренд из Лондона REVOLUTION Makeup своим появлением на рынке в 2014 году произвёл настоящий бум.", "url" : "revolution-makeup.html", "img" : "revolution-makeup.jpg"},
+		{"title" : "LV", "description" : "Марка гипоаллергенных средств по уходу за телом и бытовой химии. Все продукты бренда созданы финскими специалистами в сотрудничестве с некоммерческой организацией «Союз против Аллергии и Астмы.", "url" : "lv.html", "img" : "lv.jpg"},
+		{"title" : "Sebastian", "description" : "Профессиональная косметика для волос SEBASTIAN Professional – это общеизвестный торговый бренд, который был создан парой креативных стилистов Джон Себастиан и Джери Кузенца в 1970 году.", "url" : "sebastian.html", "img" : "sebastian.jpg"},
+		{"title" : "Wella System Professional", "description" : "Немецкий бренд Wella System Professional известен уже более 100 лет. Он предлагает модные инновации для ухода, лечения, стайлинга и преображения локонов.", "url" : "wella-system-professional.html", "img" : "wella-system-professional.jpg"},
+		{"title" : "GHD", "description" : "Первоклассные изобретения для укладки волос: стайлеры, фены, щипцы и плойки работающие по технологиям, которые позволяют сделать эффектную укладку, не травмируя волосы.", "url" : "ghd.html", "img" : "ghd.jpg"},
+		{"title" : "Nioxin", "description" : "Продукты, предназначенные для сохранения оздоровления волосяного стержня и избавления кожи от раздражения, снижения негативного эффекта от процедуры окрашивания и закрепления цвета, что позволит уменьшить частоту применения краски.", "url" : "nioxin.html", "img" : "nioxin.jpg"},
+		{"title" : "Zinger", "description" : "Изделия марки «Zinger» - это полный набор высококачественных маникюрных и педикюрных инструментов великолепного дизайна, которые давно пользуются заслуженной популярностью во всем мире.", "url" : "zinger.html", "img" : "zinger.jpg"},
+		{"title" : "Cellmiin", "description" : "Бренд лечебной натуральной косметики Cellmiin был запушен компанией WELCRON HEALTHCARE в 2017 году, когда компания разработала множество различных рецептур по уходу за кожей лица и тела без добавления химических ингредиентов.", "url" : "cellmiin.html", "img" : "cellmiin.jpg"}
+	],
+	"grid": [
+		{"img" : "dr-gloderm.png"},
+		{"img" : "3w-clinic.png"},
+		{"img" : "wella.png"},
+		{"img" : "londa.png"},
+		{"img" : "opi.png"},
+		{"img" : "swarovski.png"},
+		{"img" : "catrice.png"},
+		{"img" : "essence.png"},
+		{"img" : "real-techniques.png"},
+		{"img" : "ecotools.png"},
+		{"img" : "revolution-makeup.png"},
+		{"img" : "lv.png"},
+		{"img" : "sebastian.png"},
+		{"img" : "sp.png"},
+		{"img" : "ghd.png"},
+		{"img" : "nioxin.png"},
+		{"img" : "zinger.png"},
+		{"img" : "cellmiin.png"},
+		{"img" : "elizavecca.png"},
+		{"img" : "petitfee.png"},
+		{"img" : "koelf.png"},
+		{"img" : "esthetic-house.png"},
+		{"img" : "l-sanic.png"}
+	]
+}
