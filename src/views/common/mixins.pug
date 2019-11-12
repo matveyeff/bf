@@ -3,10 +3,10 @@ mixin icon(iconName, iconClass)
 		use(xlink:href=`./img/sprite.svg#${iconName}`)
 
 mixin nav(className, id='')
-	nav(class="" + className, id='nav')
-		ul(class="nav__list")
+	nav(class="" + className, id='')
+		ul(class=className + "__list")
 			each item in nav
-				li(class="nav__item"): a(href=item.url class="nav__link")= item.title
+				li(class=className + "__item"): a(href=item.url class=className + "__link")= item.title
 
 mixin socials(className)
 	div(class=className)
@@ -33,4 +33,4 @@ mixin grid(className)
 		ul(class=className + '__list')
 			each item in grid
 				li(class=className + '__item')
-					img(class=className + '__img', src=`img/brandslist/${item.img}`)
+					img(class=className + '__img', src=`img/brandslist/${item.img}`, alt=`${item.title}`)

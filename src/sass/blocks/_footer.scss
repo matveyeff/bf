@@ -1,6 +1,16 @@
 .footer {
-	color: $white;
+	font-size: .875rem;
 	font-weight: 300;
-	padding: $gutter 0;
+	color: $light;
+	padding: $gutter*2 0;
 	background-color: $accent;
+	&__container {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__title {
+		font-size: 18px;
+		font-weight: 500;
+		margin-bottom: $gutter;
+	}
 }

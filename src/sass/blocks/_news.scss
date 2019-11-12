@@ -1,0 +1,25 @@
+.news {
+	&__list {
+		display: flex;
+	}
+	&__item {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+		padding: .5rem;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	&__text {
+		color: $dark;
+	}
+	&__title {
+		font-size: 1.125rem;
+		font-weight: 500;
+		margin-bottom: .9375rem;
+	}
+	&__img {
+		margin-bottom: .9375rem;
+	}
+}

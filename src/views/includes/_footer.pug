@@ -1,6 +1,54 @@
 footer.footer
 	.container.footer__container
-		ul.footer__list
-			li.footer__item
-				a.logo(href="/"): +icon('logo', 'logo__icon')
-				span © 2019 BeautyForce
+		.footer__col
+			a.logo(href="/"): +icon('logo', 'logo__icon')
+			span.copyright © 2019 BeautyForce
+		.footer__col
+			h3.footer__title Меню
+			+nav('footer-nav')
+		.footer__col
+			.footer-soc
+				h3.footer__title Мы в соцсетях
+				ul.footer-soc__list
+					li.footer-soc__item
+						a.footer-soc__link(href="https://www.instagram.com/beautyforce.ru/")
+							+icon('instagram', 'footer-soc__icon')
+							span.footer-soc__title Instagram
+					li.footer-soc__item
+						a.footer-soc__link(href="https://web.facebook.com/gloderm/")
+							+icon('facebook', 'footer-soc__icon')
+							span.footer-soc__title Facebook
+					li.footer-soc__item
+						a.footer-soc__link(href="https://www.youtube.com/channel/UCclQv0cHZAxC4z-Ym6friIw")
+							+icon('youtube', 'footer-soc__icon')
+							span.footer-soc__title Youtube
+		.footer__col
+			.footer-brands
+				h3.footer__title Бренды
+				ul.footer-brands__list
+					li.footer-brands__item
+						a.footer-brands__link(href="#") Dr. Gloderm
+					li.footer-brands__item
+						a.footer-brands__link(href="#") 3W Clinic
+					li.footer-brands__item
+						a.footer-brands__link(href="#") Wella
+					li.footer-brands__item
+						a.footer-brands__link(href="#") Londa
+					li.footer-brands__item
+						a.footer-brands__link(href="#") OPI
+		.footer__col
+			.contacts
+				h3.footer__title Контакты
+				ul.contacts__list
+					li.contacts__item
+						+icon('marker', 'contacts__icon')
+						span.contacts__title Адрес:
+						span.contacts__text Москва, ул. Павловская, д. 27
+					li.contacts__item
+						+icon('phone', 'contacts__icon')
+						span.contacts__title Телефон:
+						span.contacts__text +7(499)409-21-80
+					li.contacts__item
+						+icon('mail', 'contacts__icon')
+						span.contacts__title Email:
+						span.contacts__text info@beforce.ru

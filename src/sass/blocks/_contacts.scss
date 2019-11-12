@@ -1,0 +1,15 @@
+.contacts {
+	&__item {
+		display: flex;
+		align-items: center;
+		margin-bottom: $gutter/2;
+	}
+	&__title {
+		margin: 0 .5rem;
+	}
+	&__icon {
+		width: 13px;
+		height: 13px;
+		fill: $light;
+	}
+}

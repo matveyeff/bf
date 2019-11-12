@@ -1,0 +1,11 @@
+.footer-nav {
+	&__item {
+		margin-bottom: $gutter/2;
+	}
+	&__link {
+		color: $light;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

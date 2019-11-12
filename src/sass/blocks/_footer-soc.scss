@@ -1,0 +1,20 @@
+.footer-soc {
+	&__item {
+		display: flex;
+		margin-bottom: $gutter/2;
+	}
+	&__link {
+		display: flex;
+		align-items: center;
+		color: $light;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	&__icon {
+		width: 13px;
+		height: 13px;
+		fill: $light;
+		margin-right: .5rem;
+	}
+}
