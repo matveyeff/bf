@@ -2,8 +2,8 @@ mixin icon(iconName, iconClass)
 	svg(class=`${iconClass}`)
 		use(xlink:href=`./img/sprite.svg#${iconName}`)
 
-mixin nav(className, id='')
-	nav(class="" + className, id='')
+mixin nav(className)
+	nav(class="" + className)
 		ul(class=className + "__list")
 			each item in nav
 				li(class=className + "__item"): a(href=item.url class=className + "__link")= item.title

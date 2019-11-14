@@ -17,9 +17,12 @@
 	&__title {
 		font-size: 1.125rem;
 		font-weight: 500;
-		margin-bottom: .9375rem;
+		margin-bottom: $gutter/2;
 	}
 	&__img {
 		margin-bottom: .9375rem;
+	}
+	&__date {
+		font-size: .875rem;
 	}
 }

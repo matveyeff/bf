@@ -62,6 +62,7 @@ h6 {
 	position: relative;
 	min-height: 100%;
 	overflow: hidden;
+	background-color: $gray;
 }
 
 .container {
@@ -76,13 +77,16 @@ h6 {
 	flex-direction: column;
 	width: 100%;
 	padding: $gutter 0;
-	background-color: $gray;
 }
 
 .title {
+	font-size: 1.75rem;
 	font-weight: 600;
-	font-size: 2rem;
 	color: $dark;
 	line-height: 1;
-	margin-bottom: 1.5625rem;
+	margin-bottom: $gutter;
+}
+
+.main {
+	margin: $gutter 0;
 }

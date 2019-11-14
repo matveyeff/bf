@@ -12,4 +12,10 @@
 		height: 13px;
 		fill: $light;
 	}
+	&__link {
+		color: $light;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }

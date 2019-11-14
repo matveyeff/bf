@@ -1,0 +1,17 @@
+extends ../page.pug
+
+append config
+	- title = 'Маркетинг'
+	- desc = 'Описание страницы маркетинг'
+	-	image	=	'brands.jpg'
+
+block content
+	.container
+		.breadcrumbs
+			ul.breadcrumbs__list
+				li.breadcrumbs__item
+					a.breadcrumbs__link(href="/") Главная
+				li.breadcrumbs__item Маркетинг
+		main.main
+			h2.title Маркетинг
+			p Специально назначенный менеджер по маркетингу, который будет ответственный за разработку и позиционирование бренда в России. Менеджер будет отвечать за популяризацию среди блогеров, работающих с отзывами клиентов.

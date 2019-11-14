@@ -1,0 +1,33 @@
+.page-contacts {
+	&__item {
+		margin-bottom: $gutter*2;
+	}
+	&__link {
+		color: $dark;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	&__title {
+		font-size: 1.1rem;
+		font-weight: 600;
+		color: $dark;
+		margin-bottom: $gutter/2;
+	}
+	&__subtitle {
+		font-size: 1rem;
+		font-weight: 500;
+		color: $dark;
+	}
+	&__soc {
+		display: flex;
+		align-items: center;
+		margin-bottom: $gutter/2;
+	}
+	&__icon {
+		width: 1rem;
+		height: 1rem;
+		fill: $dark;
+		margin-right: 5px;
+	}
+}

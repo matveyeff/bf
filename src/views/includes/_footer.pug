@@ -43,12 +43,12 @@ footer.footer
 					li.contacts__item
 						+icon('marker', 'contacts__icon')
 						span.contacts__title Адрес:
-						span.contacts__text Москва, ул. Павловская, д. 27
+						.contacts__text Москва, ул. Павловская, д. 27, стр. 4
 					li.contacts__item
 						+icon('phone', 'contacts__icon')
 						span.contacts__title Телефон:
-						span.contacts__text +7(499)409-21-80
+						a.contacts__link(href="tel:+74994092180") +7(499)409-21-80
 					li.contacts__item
 						+icon('mail', 'contacts__icon')
 						span.contacts__title Email:
-						span.contacts__text info@beforce.ru
+						a.contacts__link(href="mailto:info@beforce.ru") info@beforce.ru

@@ -6,7 +6,12 @@ append config
 	-	image	=	'brands.jpg'
 
 block content
-	main
-		section.section.page
-			.container
-				+brands('brands')
+	.container
+		.breadcrumbs
+			ul.breadcrumbs__list
+				li.breadcrumbs__item
+					a.breadcrumbs__link(href="/") Главная
+				li.breadcrumbs__item Бренды
+		main.main
+			h2.title Бренды
+			+brands('brands')

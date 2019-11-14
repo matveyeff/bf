@@ -1,0 +1,41 @@
+extends ../page.pug
+
+append config
+	- title = 'О компании'
+	- desc = 'Описание страницы о компании'
+	-	image	=	'brands.jpg'
+
+block content
+	.container
+		.breadcrumbs
+			ul.breadcrumbs__list
+				li.breadcrumbs__item
+					a.breadcrumbs__link(href="/") Главная
+				li.breadcrumbs__item О компании
+		main.main
+			h2.title Контакты
+			.page-contacts
+				.page-contacts__list
+					.page-contacts__item
+						h3.page-contacts__title Главный офис ООО «Бьюти Форс»
+						h4.page-contacts__subtitle Адрес:
+						p Москва, ул. Павловская, д. 27, стр. 4
+						h4.page-contacts__subtitle Телефон:
+						p +7(499)409-21-80
+					.page-contacts__item
+						h3.page-contacts__title Контакт для поставщиков
+						a.page-contacts__link(href="mailto:purchasing@beforce.ru") purchasing@beforce.ru
+					.page-contacts__item
+						h3.page-contacts__title Вопросы по трудоустройству
+						a.page-contacts__link(href="mailto:hr@beforce.ru") hr@beforce.ru
+					.page-contacts__item
+						h3.page-contacts__title Мы в соцсетях
+						.page-contacts__soc
+							+icon('instagram', 'page-contacts__icon')
+							a.page-contacts__link(href="https://www.instagram.com/beautyforce.ru/") Instagram
+						.page-contacts__soc
+							+icon('facebook', 'page-contacts__icon')
+							a.page-contacts__link(href="https://web.facebook.com/gloderm/") Facebook
+						.page-contacts__soc
+							+icon('youtube', 'page-contacts__icon')
+							a.page-contacts__link(href="https://www.youtube.com/channel/UCclQv0cHZAxC4z-Ym6friIw") Youtube

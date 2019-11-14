@@ -1,0 +1,32 @@
+.partners {
+	margin: $gutter 0;
+	&__list {
+		display: flex;
+		flex-direction: column;
+	}
+	&__item {
+		display: flex;
+		align-items: center;
+		margin-bottom: $gutter;
+	}
+	&__pic {
+		flex-basis: 25%;
+		padding: 2rem;
+		margin-right: $gutter*2;
+	}
+	&__img {
+		width: 100%;
+	}
+	&__desc {
+		flex-basis: 75%;
+	}
+	&__title {
+		font-size: 1.5rem;
+		font-weight: 600;
+		color: $dark;
+		margin-bottom: $gutter/3;
+	}
+	&__link {
+		margin-bottom: $gutter;
+	}
+}
