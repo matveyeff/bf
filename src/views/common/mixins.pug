@@ -13,7 +13,7 @@ mixin socials(className)
 		ul(class=className + '__list')
 			each social in socials
 				li(class=className + '__item')
-					a(href=social.url, class=className + '__link')
+					a(href=social.url, class=className + '__link', target="_blank")
 						svg(class=className + '__icon')
 							use(xlink:href=`./img/sprite.svg#${social.title}`)
 

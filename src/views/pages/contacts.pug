@@ -1,8 +1,8 @@
 extends ../page.pug
 
 append config
-	- title = 'О компании'
-	- desc = 'Описание страницы о компании'
+	- title = 'Контакты'
+	- desc = 'Описание страницы Контакты'
 	-	image	=	'brands.jpg'
 
 block content
@@ -11,7 +11,7 @@ block content
 			ul.breadcrumbs__list
 				li.breadcrumbs__item
 					a.breadcrumbs__link(href="/") Главная
-				li.breadcrumbs__item О компании
+				li.breadcrumbs__item Контакты
 		main.main
 			h2.title Контакты
 			.page-contacts
@@ -21,7 +21,7 @@ block content
 						h4.page-contacts__subtitle Адрес:
 						p Москва, ул. Павловская, д. 27, стр. 4
 						h4.page-contacts__subtitle Телефон:
-						p +7(499)409-21-80
+						a.page-contacts__link(href="tel:+74994092180") +7(499)409-21-80
 					.page-contacts__item
 						h3.page-contacts__title Контакт для поставщиков
 						a.page-contacts__link(href="mailto:purchasing@beforce.ru") purchasing@beforce.ru
