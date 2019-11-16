@@ -1,0 +1,30 @@
+.page-news {
+	&__item {
+		display: flex;
+		align-items: flex-start;
+		margin-bottom: $gutter;
+		max-height: 230px;
+		box-shadow: -3px 3px 10px -6px rgba(0,0,0,0.1);
+		overflow: hidden;
+	}
+	&__desc {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+		margin-left: $gutter;
+	}
+	&__title {
+		font-size: 1.5rem;
+		font-weight: 500;
+		color: $dark;
+	}
+	&__link {
+		color: $dark;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	&__pic {
+		display: flex;
+	}
+}
