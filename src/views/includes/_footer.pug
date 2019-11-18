@@ -7,6 +7,22 @@ footer.footer
 			h3.footer__title Меню
 			+nav('footer-nav')
 		.footer__col
+			.footer-brands
+				h3.footer__title Бренды
+				ul.footer-brands__list
+					li.footer-brands__item
+						a.footer-brands__link(href="dr-gloderm.html") Dr. Gloderm
+					li.footer-brands__item
+						a.footer-brands__link(href="3w-clinic.html") 3W Clinic
+					li.footer-brands__item
+						a.footer-brands__link(href="wella.html") Wella
+					li.footer-brands__item
+						a.footer-brands__link(href="londa.html") Londa
+					li.footer-brands__item
+						a.footer-brands__link(href="opi.html") OPI
+					li.footer-brands__item
+						a.footer-brands__link(href="swarovski.html") Swarovski
+		.footer__col
 			.footer-soc
 				h3.footer__title Мы в соцсетях
 				ul.footer-soc__list
@@ -22,20 +38,14 @@ footer.footer
 						a.footer-soc__link(href="https://www.youtube.com/channel/UCclQv0cHZAxC4z-Ym6friIw", target="_blank")
 							+icon('youtube', 'footer-soc__icon')
 							span.footer-soc__title Youtube
-		.footer__col
-			.footer-brands
-				h3.footer__title Бренды
-				ul.footer-brands__list
-					li.footer-brands__item
-						a.footer-brands__link(href="dr-gloderm.html") Dr. Gloderm
-					li.footer-brands__item
-						a.footer-brands__link(href="3w-clinic.html") 3W Clinic
-					li.footer-brands__item
-						a.footer-brands__link(href="wella.html") Wella
-					li.footer-brands__item
-						a.footer-brands__link(href="londa.html") Londa
-					li.footer-brands__item
-						a.footer-brands__link(href="opi.html") OPI
+					li.footer-soc__item
+						a.footer-soc__link(href="#", target="_blank")
+							+icon('vk', 'footer-soc__icon')
+							span.footer-soc__title Вконтакте
+					li.footer-soc__item
+						a.footer-soc__link(href="#", target="_blank")
+							+icon('odnoklassniki', 'footer-soc__icon')
+							span.footer-soc__title Одноклассники
 		.footer__col
 			.contacts
 				h3.footer__title Контакты

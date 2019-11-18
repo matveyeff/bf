@@ -1,8 +1,8 @@
 extends ../main.pug
 
 append config
-	- title = 'Главная страница'
-	- desc = 'Описание главной страницы'
+	- title = 'Beauty Force | Официальный дистрибьютор косметики'
+	- desc = 'Дистрибьюторская компания Beauty Force была основана в 2010 году. Мы следим за тенденциями развития рынка косметики и выбираем лучшие бренды. За время своей работы мы приобрели надежных партнеров по всей России.'
 
 block content
 	section.section.hero
@@ -28,7 +28,7 @@ block content
 	section.section
 		.container
 				+grid('brands-grid')
-				a.link(href="brands.html") Все бренды
+				a.link.link_right(href="brands.html") Все бренды
 
 	section.section.news
 		.container
