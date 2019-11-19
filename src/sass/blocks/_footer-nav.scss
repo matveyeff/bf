@@ -1,6 +1,10 @@
 .footer-nav {
+	&__list {
+		flex-direction: column;
+	}
 	&__item {
 		margin-bottom: $gutter/2;
+		margin-right: 0;
 	}
 	&__link {
 		color: $light;
