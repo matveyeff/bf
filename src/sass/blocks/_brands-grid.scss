@@ -1,15 +1,31 @@
 .brands-grid {
-  padding: 0rem 2rem;
   &__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    margin-bottom: $gutter/2;
   }
   &__item {
+    background-color: $white;
+    margin-bottom: $gutter/2;
     flex-basis: 12%;
+    box-shadow: -5px 9px 11px -9px rgba(0,0,0,0.55);
+    border-radius: 2px;
+    transition: box-shadow $slow;
+    &:hover {
+      box-shadow: -5px 9px 11px -9px rgba(0,0,0,0.95);
+      .brands-grid__img {
+        filter: none;
+      }
+    }
+  }
+  &__link {
+    display: flex;
   }
   &__img {
     filter: grayscale(1);
+    transition: filter $slow;
+    height: auto;
   }
 }

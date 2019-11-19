@@ -39,4 +39,5 @@ mixin grid(className)
 		ul(class=className + '__list')
 			each item in grid
 				li(class=className + '__item')
-					img(class=className + '__img', src=`img/brandslist/${item.img}`, alt=`${item.title}`)
+					a(class=className + '__link' href=item.url)
+						img(class=className + '__img', src=`img/brandslist/${item.img}`, alt=`${item.title}`)
