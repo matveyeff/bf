@@ -1,11 +1,11 @@
 {
 	"nav": [
-		{"title": "Бренды", "url": "./brands.html"},
-		{"title": "Партнеры", "url": "./partners.html"},
-		{"title": "Сотрудничество", "url": "./partnership.html"},
-		{"title": "Маркетинг", "url": "./marketing.html"},
-		{"title": "О компании", "url": "./about.html"},
-		{"title": "Контакты", "url": "./contacts.html"}
+		{"title": "Бренды", "url": "brands.html"},
+		{"title": "Партнеры", "url": "partners.html"},
+		{"title": "Сотрудничество", "url": "partnership.html"},
+		{"title": "Маркетинг", "url": "marketing.html"},
+		{"title": "О компании", "url": "about.html"},
+		{"title": "Контакты", "url": "contacts.html"}
 	],
 	"socials": [
 		{"title": "instagram", "url": "https://www.instagram.com/beautyforce.ru"},
