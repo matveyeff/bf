@@ -1,0 +1,13 @@
+.page-sidebar {
+	flex-basis: 20%;
+	margin-left: 3rem;
+	padding-top: 3rem;
+	color: $dark;
+	&__title {
+		font-size: 1.3125rem;
+		font-weight: 500;
+		color: $dark;
+		line-height: 1;
+		margin-bottom: $gutter;
+	}
+}

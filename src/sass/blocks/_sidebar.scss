@@ -1,0 +1,11 @@
+.sidebar {
+	&__col {
+		margin-bottom: $gutter;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&__title {
+		font-weight: 500;
+	}
+}
