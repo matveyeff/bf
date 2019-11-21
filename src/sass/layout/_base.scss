@@ -96,4 +96,8 @@ h6 {
 
 .main {
 	margin: $gutter 0;
+
+	@include phones {
+		margin: 0;
+	}
 }

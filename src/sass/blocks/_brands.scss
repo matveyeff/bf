@@ -1,9 +1,17 @@
 .brands {
 	margin: $gutter 0;
+
+	@include phones {
+		margin: 0;
+	}
 	&__list {
 		display: flex;
 		flex-wrap: wrap;
 		margin-bottom: $gutter;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 	&__item {
 		flex: 0 0 32%;
