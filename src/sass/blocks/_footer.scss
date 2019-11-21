@@ -4,13 +4,39 @@
 	color: $light;
 	padding: $gutter*2 0;
 	background-color: $accent;
+
+	@include phones {
+		padding: $gutter/2 0;
+	}
 	&__container {
 		display: flex;
 		justify-content: space-between;
+
+		@include phones {
+			flex-direction: column;
+		}
+	}
+	&__col {
+
+		@include tablets {
+			&:nth-child(2) {
+				display: none;
+			}
+		}
+
+		@include phones {
+			&:nth-child(4), &:nth-child(3) {
+				display: none;
+			}
+		}
 	}
 	&__title {
 		font-size: 18px;
 		font-weight: 500;
 		margin-bottom: $gutter/1.5;
+
+		@include phones {
+			display: none;
+		}
 	}
 }

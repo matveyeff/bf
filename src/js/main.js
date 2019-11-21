@@ -11,3 +11,30 @@ $(document).ready(function(){
 		dots: true
   });
 });
+
+var menu = document.getElementById('menu');
+var nav = document.getElementById('nav');
+var close = document.getElementById('close');
+
+menu.addEventListener('click', function(e) {
+	e.preventDefault();
+	nav.style.display = 'flex';
+	close.style.display = 'flex'
+	menu.style.display = 'none'
+});
+
+close.addEventListener('click', function(e) {
+	e.preventDefault();
+	nav.style.display = 'none';
+	close.style.display = 'none'
+	menu.style.display = 'flex'
+})
+
+// var cross = document.getElementById('cross');
+
+// cross.addEventListener('click', function() {
+// 	cross.style.display = 'none';
+// 	style.display = 'none';
+// 	hamburger.style.display = 'flex';
+// 	document.getElementById('header').style.position = '';
+// })

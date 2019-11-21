@@ -1,0 +1,12 @@
+.mobile-menu {
+	display: none;
+
+	@include phones {
+		display: flex;
+	}
+	&__icon {
+		width: 1.5rem;
+		height: 1.5rem;
+		fill: $white;
+	}
+}

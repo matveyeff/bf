@@ -1,10 +1,37 @@
 .nav {
 	display: flex;
+
+	@include phones {
+		display: none;
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		align-items: center;
+		justify-content: center;
+		background-color: rgba(0,0,0,.85);
+		z-index: 10;
+	}
 	&__list	{
 		display: flex;
+
+		@include phones {
+			flex-direction: column;
+			text-align: center;
+		}
 	}
 	&__item {
 		margin-right: .9375rem;
+
+		@include tablets {
+			margin-right: .5714285714285714rem;
+		}
+
+		@include phones {
+			margin-right: 0;
+			margin-bottom: $gutter;
+		}
 	}
 	&__link {
 		font-size: .875rem;
@@ -12,6 +39,11 @@
 		color: $white;
 		position: relative;
 		padding-bottom: 8px;
+
+		@include phones {
+			font-size: 2rem;
+		}
+
 		&:after {
 			content: '';
 			position: absolute;
@@ -32,6 +64,9 @@
 			&:after {
 				opacity: .7;
 			}
+		}
+		@include tablets {
+			font-size: .8571428571428571rem;
 		}
 	}
 }

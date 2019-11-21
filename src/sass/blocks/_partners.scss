@@ -13,6 +13,12 @@
 		flex-basis: 25%;
 		padding: 2rem;
 		margin-right: $gutter*2;
+
+		@include tablets {
+			flex-basis: 33%;
+			padding: 1rem;
+			margin-right: 1rem;
+		}
 	}
 	&__img {
 		width: 100%;

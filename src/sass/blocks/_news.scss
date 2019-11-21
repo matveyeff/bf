@@ -1,6 +1,10 @@
 .news {
 	&__list {
 		display: flex;
+
+		@include tablets {
+			flex-direction: column;
+		}
 	}
 	&__item {
 		display: flex;
@@ -11,6 +15,16 @@
 		&:last-child {
 			margin-right: 0;
 		}
+
+		@include tablets {
+			flex-direction: row;
+			padding: 0;
+			margin-bottom: $gutter;
+		}
+
+		@include phones {
+			flex-direction: column;
+		}
 	}
 	&__text {
 		color: $dark;
@@ -19,9 +33,25 @@
 		font-size: 1.125rem;
 		font-weight: 500;
 		margin-bottom: $gutter/2;
+
+		@include tablets {
+			font-size: 1.2857142857142866rem;
+		}
 	}
 	&__img {
 		margin-bottom: .9375rem;
+
+		@include tablets {
+			max-width: 21.42857142857143rem;
+			margin-bottom: 0;
+			margin-right: $gutter;
+		}
+
+		@include phones {
+			max-width: 100%;
+			margin-right: 0;
+			margin-bottom: $gutter;
+		}
 	}
 	&__date {
 		font-size: .875rem;

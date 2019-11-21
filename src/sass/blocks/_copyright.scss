@@ -1,4 +1,9 @@
 .copyright {
 	display: block;
 	margin-top: $gutter;
+
+	@include phones {
+		margin-top: 5px;
+		margin-bottom: $gutter;
+	}
 }

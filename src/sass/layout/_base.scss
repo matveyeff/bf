@@ -66,10 +66,13 @@ h6 {
 }
 
 .container {
-	position: relative;
 	width: 100%;
 	max-width: 1240px;
 	margin: 0 auto;
+
+	@include tablets {
+		width: 95%;
+	}
 }
 
 .section {
@@ -85,6 +88,10 @@ h6 {
 	color: $dark;
 	line-height: 1;
 	margin-bottom: $gutter/2;
+
+	@include tablets {
+		font-size: 1.5rem;
+	}
 }
 
 .main {

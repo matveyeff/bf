@@ -3,7 +3,7 @@ mixin icon(iconName, iconClass)
 		use(xlink:href=`./img/sprite.svg#${iconName}`)
 
 mixin nav
-	nav.nav
+	nav.nav#nav
 		ul.nav__list
 			each item in nav
 				li.nav__item: a.nav__link(href=item.url class=currentURL == item.url ? 'active' : '')= item.title
@@ -22,17 +22,6 @@ mixin socials(className)
 					a(href=social.url, class=className + '__link', target="_blank")
 						svg(class=className + '__icon')
 							use(xlink:href=`./img/sprite.svg#${social.title}`)
-
-mixin brands(className)
-	div(class=className)
-		ul(class=className + '__list')
-			each brand in brands
-				li(class=className + '__item')
-					a(href=brand.url, class=className + '__link')
-						img(src=`img/brands/${brand.img}`, alt=`${brand.title}`, class=className + '__img')
-						div(class=className + '__content')
-							h2(class=className + '__title')= brand.title
-							span(class=className + '__desc')= brand.description
 
 mixin grid(className)
 	div(class=className)

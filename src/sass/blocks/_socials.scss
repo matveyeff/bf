@@ -1,5 +1,9 @@
 .socials {
 	display: flex;
+
+	@include phones {
+		display: none;
+	}
 	&__list	{
 		display: flex;
 	}

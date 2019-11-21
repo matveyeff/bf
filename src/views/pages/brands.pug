@@ -4,7 +4,7 @@ append config
 	- title = 'Бренды | Beautyforce.ru'
 	- h1 = 'Бренды'
 	- desc = 'Мы постоянно совершенствуем свой профессионализм и подбираем лучшую косметику. Сегодня у нас есть бренды декоративной косметики и средств по уходу за кожей из США, ЕС, Южная Корея входит в портфель компании.'
-	-	image	=	'headers/brands.jpg'
+	-	image	=	'headers/page-header-01.jpg'
 	- currentURL = 'brands.html'
 
 block content
@@ -17,4 +17,116 @@ block content
 		main.main
 			h2.page__title Бренды
 			p Мы постоянно совершенствуем свой профессионализм и подбираем лучшую косметику. Сегодня у нас есть бренды декоративной косметики и средств по уходу за кожей из США, ЕС, Южная Корея входит в портфель компании.
-			+brands('brands')
+			.brands
+				h3.brands__heading Уход за кожей
+				ul.brands__list
+					li.brands__item
+						a.brands__link(href="dr-gloderm.html")
+							img(src="img/brands/dr-gloderm.jpg", alt="Dr.Gloderm")
+							.brands__content
+								h2.brands__title Dr.Gloderm
+								span.brands__desc Dr.Gloderm представляет процедуры по уходу за кожей с рекомендованными дозами, которые отличают их продукты от существующих на рынке.
+					li.brands__item
+						a.brands__link(href="3w-clinic.html")
+							img(src="img/brands/3w-clinic.jpg", alt="3w-clinic")
+							.brands__content
+								h2.brands__title 3w Clinic
+								span.brands__desc Косметика 3W Clinic – это комбинация восточных медицинских традиций и современных достижений науки.
+					li.brands__item
+						a.brands__link(href="cellmiin.html")
+							img(src="img/brands/cellmiin.jpg", alt="Cellmiin")
+							.brands__content
+								h2.brands__title Cellmiin
+								span.brands__desc Бренд лечебной натуральной косметики Cellmiin был запушен компанией WELCRON HEALTHCARE в 2017 году, когда компания разработала множество различных рецептур по уходу за кожей лица и тела без добавления химических ингредиентов.
+				h3.brands__heading Уход за волосами
+				ul.brands__list
+					li.brands__item
+						a.brands__link(href="wella.html")
+							img(src="img/brands/wella.jpg", alt="Wella")
+							.brands__content
+								h2.brands__title Wella
+								span.brands__desc Немецкая компания, является одной из ведущих компаний в мире в области косметики и парфюмерии. Основанная в 1880 году, Wella AG присутствует в более чем 150 странах. Производит средства для ухода за волосами, краски для волос.
+					li.brands__item
+						a.brands__link(href="londa.html")
+							img(src="img/brands/londa.jpg", alt="Londa")
+							.brands__content
+								h2.brands__title Londa
+								span.brands__desc Профессиональный салонный бренд с более чем 60-летним наследием. Коллекция продуктов для ухода за волосами, окрашивания и стайлинга создана, чтобы подчеркнуть красоту в повседневной жизни.
+					li.brands__item
+						a.brands__link(href="wella-system-professional.html")
+							img(src="img/brands/wella-system-professional.jpg", alt="wella-system-professional")
+							.brands__content
+								h2.brands__title Wella System Professional
+								span.brands__desc Немецкий бренд Wella System Professional известен уже более 100 лет. Он предлагает модные инновации для ухода, лечения, стайлинга и преображения локонов.
+					li.brands__item
+						a.brands__link(href="nioxin.html")
+							img(src="img/brands/nioxin.jpg", alt="Nioxin")
+							.brands__content
+								h2.brands__title Nioxin
+								span.brands__desc Продукты, предназначенные для сохранения оздоровления волосяного стержня и избавления кожи от раздражения, снижения негативного эффекта от процедуры окрашивания и закрепления цвета, что позволит уменьшить частоту применения краски.
+					li.brands__item
+						a.brands__link(href="sebastian.html")
+							img(src="img/brands/sebastian.jpg", alt="Sebastian")
+							.brands__content
+								h2.brands__title Sebastian
+								span.brands__desc Профессиональная косметика для волос SEBASTIAN Professional – это общеизвестный торговый бренд, который был создан парой креативных стилистов Джон Себастиан и Джери Кузенца в 1970 году.
+					li.brands__item
+						a.brands__link(href="ghd.html")
+							img(src="img/brands/ghd.jpg", alt="GHD")
+							.brands__content
+								h2.brands__title GHD
+								span.brands__desc Первоклассные изобретения для укладки волос: стайлеры, фены, щипцы и плойки работающие по технологиям, которые позволяют сделать эффектную укладку, не травмируя волосы.
+				h3.brands__heading Декоративная косметика
+				ul.brands__list
+					li.brands__item
+						a.brands__link(href="catrice.html")
+							img(src="img/brands/catrice.jpg", alt="Catrice")
+							.brands__content
+								h2.brands__title Catrice
+								span.brands__desc Симбиоз красоты и моды является одним из главных преимуществ бренда CATRICE. Бренд, вдохновленный трендами мировых столиц моды!
+					li.brands__item
+						a.brands__link(href="essence.html")
+							img(src="img/brands/essence.jpg", alt="Essence")
+							.brands__content
+								h2.brands__title Essence
+								span.brands__desc Декоративная косметика essence обладает средней пигментированностью – поэтому она не загрязняет поры и не выглядит как маска.
+					li.brands__item
+						a.brands__link(href="revolution-makeup.html")
+							img(src="img/brands/revolution-makeup.jpg", alt="Revolution Makeup")
+							.brands__content
+								h2.brands__title Revolution Makeup
+								span.brands__desc Амбициозный бренд из Лондона REVOLUTION Makeup своим появлением на рынке в 2014 году произвёл настоящий бум.
+					li.brands__item
+						a.brands__link(href="opi.html")
+							img(src="img/brands/opi.jpg", alt="OPI")
+							.brands__content
+								h2.brands__title OPI
+								span.brands__desc Лидер индустрии профессионального ухода за ногтями. Культ цвета заложен в ДНК бренда.
+				h3.brands__heading Бытовая химия
+				ul.brands__list
+					li.brands__item
+						a.brands__link(href="lv.html")
+							img(src="img/brands/lv.jpg", alt="LV")
+							.brands__content
+								h2.brands__title LV
+								span.brands__desc Марка гипоаллергенных средств по уходу за телом и бытовой химии. Все продукты бренда созданы финскими специалистами в сотрудничестве с некоммерческой организацией «Союз против Аллергии и Астмы.
+				h3.brands__heading Аксессуары
+				ul.brands__list
+					li.brands__item
+						a.brands__link(href="swarovski.html")
+							img(src="img/brands/swarovski.jpg", alt="Swarovski")
+							.brands__content
+								h2.brands__title Swarovski
+								span.brands__desc Swarovski AG — австрийская компания, специализирующаяся на производстве рассыпных кристаллов, украшений, кристальных фигурок и огранке синтетических и природных драгоценных камней.
+					li.brands__item
+						a.brands__link(href="real-techniques.html")
+							img(src="img/brands/real-techniques.jpg", alt="Real Techniques")
+							.brands__content
+								h2.brands__title Real Techniques
+								span.brands__desc Легендарный бренд кистей и аксессуаров для макияжа, созданный сестрами Николь и Саманта Чепмен в коллаборации с Paris Presents.
+					li.brands__item
+						a.brands__link(href="ecotools.html")
+							img(src="img/brands/ecotools.jpg", alt="EcoTools")
+							.brands__content
+								h2.brands__title EcoTools
+								span.brands__desc Более десяти лет Paris Presents с гордостью продолжают выпускать аутентичные, полностью натуральные продукты, которые помогают женщинам чувствовать себя по-настоящему красивыми.

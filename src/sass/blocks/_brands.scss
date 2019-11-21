@@ -3,12 +3,17 @@
 	&__list {
 		display: flex;
 		flex-wrap: wrap;
+		margin-bottom: $gutter;
 	}
 	&__item {
 		flex: 0 0 32%;
 		margin-right: $gutter/2;
 		margin-bottom: $gutter/2;
 		&:nth-child(3n) {
+			margin-right: 0;
+		}
+		@include tablets {
+			flex: 0 0 100%;
 			margin-right: 0;
 		}
 	}
@@ -58,13 +63,32 @@
 			opacity: 1;
 		}
 	}
+	&__heading {
+		font-size: 1.5rem;
+		font-weight: 500;
+		margin-bottom: $gutter/2;
+		&::after {
+			content: '';
+			width: 100px;
+			height: 2px;
+			background-color: $accent;
+		}
+	}
 	&__title {
 		font-size: 1.625rem;
 		font-weight: 500;
 		margin-bottom: $gutter/2;
+
+		@include tablets {
+			font-size: 3rem;
+		}
 	}
 	&__desc	{
 		font-size: .875rem;
 		line-height: 1.5;
+
+		@include tablets {
+			font-size: 1.2rem;
+		}
 	}
 }

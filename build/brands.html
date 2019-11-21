@@ -29,7 +29,7 @@
             <use xlink:href="./img/sprite.svg#logo"></use>
           </svg>
         </a>
-        <nav class="nav">
+        <nav class="nav" id="nav">
           <ul class="nav__list">
             <li class="nav__item"><a class="nav__link active" href="brands.html">Бренды</a>
             </li>
@@ -70,10 +70,24 @@
             </li>
           </ul>
         </div>
+        <div class="mobile-menu" id="menu">
+          <a class="mobile-menu__link" href="#">
+            <svg class="mobile-menu__icon">
+              <use xlink:href="./img/sprite.svg#bars"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="mobile-close" id="close">
+          <a class="mobile-close__link" href="#">
+            <svg class="mobile-close__icon">
+              <use xlink:href="./img/sprite.svg#times"></use>
+            </svg>
+          </a>
+        </div>
       </div>
     </header>
     <header class="page-header">
-      <div class="page-header__wrap" style="background: url(img/headers/brands.jpg) no-repeat">
+      <div class="page-header__wrap" style="background: url(img/headers/page-header-01.jpg) no-repeat">
         <div class="container page-header__container">
           <div class="page-header__content">
             <h1 class="page-header__title">Бренды</h1>
@@ -93,26 +107,38 @@
         <h2 class="page__title">Бренды</h2>
         <p>Мы постоянно совершенствуем свой профессионализм и подбираем лучшую косметику. Сегодня у нас есть бренды декоративной косметики и средств по уходу за кожей из США, ЕС, Южная Корея входит в портфель компании.</p>
         <div class="brands">
+          <h3 class="brands__heading">Уход за кожей</h3>
           <ul class="brands__list">
             <li class="brands__item">
               <a class="brands__link" href="dr-gloderm.html">
-                <img class="brands__img" src="img/brands/dr-gloderm.jpg" alt="Dr. Gloderm" />
+                <img src="img/brands/dr-gloderm.jpg" alt="Dr.Gloderm">
                 <div class="brands__content">
-                  <h2 class="brands__title">Dr. Gloderm</h2><span class="brands__desc">Dr. Gloderm представляет процедуры по уходу за кожей с рекомендованными дозами, которые отличают их продукты от существующих на рынке.</span>
+                  <h2 class="brands__title">Dr.Gloderm</h2><span class="brands__desc">Dr.Gloderm представляет процедуры по уходу за кожей с рекомендованными дозами, которые отличают их продукты от существующих на рынке.</span>
                 </div>
               </a>
             </li>
             <li class="brands__item">
               <a class="brands__link" href="3w-clinic.html">
-                <img class="brands__img" src="img/brands/3w-clinic.jpg" alt="3W Clinic" />
+                <img src="img/brands/3w-clinic.jpg" alt="3w-clinic">
                 <div class="brands__content">
-                  <h2 class="brands__title">3W Clinic</h2><span class="brands__desc">Косметика 3W Clinic – это комбинация восточных медицинских традиций и современных достижений науки.</span>
+                  <h2 class="brands__title">3w Clinic</h2><span class="brands__desc">Косметика 3W Clinic – это комбинация восточных медицинских традиций и современных достижений науки.</span>
                 </div>
               </a>
             </li>
             <li class="brands__item">
+              <a class="brands__link" href="cellmiin.html">
+                <img src="img/brands/cellmiin.jpg" alt="Cellmiin">
+                <div class="brands__content">
+                  <h2 class="brands__title">Cellmiin</h2><span class="brands__desc">Бренд лечебной натуральной косметики Cellmiin был запушен компанией WELCRON HEALTHCARE в 2017 году, когда компания разработала множество различных рецептур по уходу за кожей лица и тела без добавления химических ингредиентов.</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <h3 class="brands__heading">Уход за волосами</h3>
+          <ul class="brands__list">
+            <li class="brands__item">
               <a class="brands__link" href="wella.html">
-                <img class="brands__img" src="img/brands/wella.jpg" alt="Wella" />
+                <img src="img/brands/wella.jpg" alt="Wella">
                 <div class="brands__content">
                   <h2 class="brands__title">Wella</h2><span class="brands__desc">Немецкая компания, является одной из ведущих компаний в мире в области косметики и парфюмерии. Основанная в 1880 году, Wella AG присутствует в более чем 150 странах. Производит средства для ухода за волосами, краски для волос.</span>
                 </div>
@@ -120,31 +146,50 @@
             </li>
             <li class="brands__item">
               <a class="brands__link" href="londa.html">
-                <img class="brands__img" src="img/brands/londa.jpg" alt="Londa" />
+                <img src="img/brands/londa.jpg" alt="Londa">
                 <div class="brands__content">
                   <h2 class="brands__title">Londa</h2><span class="brands__desc">Профессиональный салонный бренд с более чем 60-летним наследием. Коллекция продуктов для ухода за волосами, окрашивания и стайлинга создана, чтобы подчеркнуть красоту в повседневной жизни.</span>
                 </div>
               </a>
             </li>
             <li class="brands__item">
-              <a class="brands__link" href="opi.html">
-                <img class="brands__img" src="img/brands/opi.jpg" alt="OPI" />
+              <a class="brands__link" href="wella-system-professional.html">
+                <img src="img/brands/wella-system-professional.jpg" alt="wella-system-professional">
                 <div class="brands__content">
-                  <h2 class="brands__title">OPI</h2><span class="brands__desc">Лидер индустрии профессионального ухода за ногтями. Культ цвета заложен в ДНК бренда.</span>
+                  <h2 class="brands__title">Wella System Professional</h2><span class="brands__desc">Немецкий бренд Wella System Professional известен уже более 100 лет. Он предлагает модные инновации для ухода, лечения, стайлинга и преображения локонов.</span>
                 </div>
               </a>
             </li>
             <li class="brands__item">
-              <a class="brands__link" href="swarovski.html">
-                <img class="brands__img" src="img/brands/swarovski.jpg" alt="Swarovski" />
+              <a class="brands__link" href="nioxin.html">
+                <img src="img/brands/nioxin.jpg" alt="Nioxin">
                 <div class="brands__content">
-                  <h2 class="brands__title">Swarovski</h2><span class="brands__desc">Swarovski AG — австрийская компания, специализирующаяся на производстве рассыпных кристаллов, украшений, кристальных фигурок и огранке синтетических и природных драгоценных камней.</span>
+                  <h2 class="brands__title">Nioxin</h2><span class="brands__desc">Продукты, предназначенные для сохранения оздоровления волосяного стержня и избавления кожи от раздражения, снижения негативного эффекта от процедуры окрашивания и закрепления цвета, что позволит уменьшить частоту применения краски.</span>
                 </div>
               </a>
             </li>
+            <li class="brands__item">
+              <a class="brands__link" href="sebastian.html">
+                <img src="img/brands/sebastian.jpg" alt="Sebastian">
+                <div class="brands__content">
+                  <h2 class="brands__title">Sebastian</h2><span class="brands__desc">Профессиональная косметика для волос SEBASTIAN Professional – это общеизвестный торговый бренд, который был создан парой креативных стилистов Джон Себастиан и Джери Кузенца в 1970 году.</span>
+                </div>
+              </a>
+            </li>
+            <li class="brands__item">
+              <a class="brands__link" href="ghd.html">
+                <img src="img/brands/ghd.jpg" alt="GHD">
+                <div class="brands__content">
+                  <h2 class="brands__title">GHD</h2><span class="brands__desc">Первоклассные изобретения для укладки волос: стайлеры, фены, щипцы и плойки работающие по технологиям, которые позволяют сделать эффектную укладку, не травмируя волосы.</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <h3 class="brands__heading">Декоративная косметика</h3>
+          <ul class="brands__list">
             <li class="brands__item">
               <a class="brands__link" href="catrice.html">
-                <img class="brands__img" src="img/brands/catrice.jpg" alt="Catrice" />
+                <img src="img/brands/catrice.jpg" alt="Catrice">
                 <div class="brands__content">
                   <h2 class="brands__title">Catrice</h2><span class="brands__desc">Симбиоз красоты и моды является одним из главных преимуществ бренда CATRICE. Бренд, вдохновленный трендами мировых столиц моды!</span>
                 </div>
@@ -152,15 +197,53 @@
             </li>
             <li class="brands__item">
               <a class="brands__link" href="essence.html">
-                <img class="brands__img" src="img/brands/essence.jpg" alt="Essence" />
+                <img src="img/brands/essence.jpg" alt="Essence">
                 <div class="brands__content">
                   <h2 class="brands__title">Essence</h2><span class="brands__desc">Декоративная косметика essence обладает средней пигментированностью – поэтому она не загрязняет поры и не выглядит как маска.</span>
                 </div>
               </a>
             </li>
             <li class="brands__item">
+              <a class="brands__link" href="revolution-makeup.html">
+                <img src="img/brands/revolution-makeup.jpg" alt="Revolution Makeup">
+                <div class="brands__content">
+                  <h2 class="brands__title">Revolution Makeup</h2><span class="brands__desc">Амбициозный бренд из Лондона REVOLUTION Makeup своим появлением на рынке в 2014 году произвёл настоящий бум.</span>
+                </div>
+              </a>
+            </li>
+            <li class="brands__item">
+              <a class="brands__link" href="opi.html">
+                <img src="img/brands/opi.jpg" alt="OPI">
+                <div class="brands__content">
+                  <h2 class="brands__title">OPI</h2><span class="brands__desc">Лидер индустрии профессионального ухода за ногтями. Культ цвета заложен в ДНК бренда.</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <h3 class="brands__heading">Бытовая химия</h3>
+          <ul class="brands__list">
+            <li class="brands__item">
+              <a class="brands__link" href="lv.html">
+                <img src="img/brands/lv.jpg" alt="LV">
+                <div class="brands__content">
+                  <h2 class="brands__title">LV</h2><span class="brands__desc">Марка гипоаллергенных средств по уходу за телом и бытовой химии. Все продукты бренда созданы финскими специалистами в сотрудничестве с некоммерческой организацией «Союз против Аллергии и Астмы.</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <h3 class="brands__heading">Аксессуары</h3>
+          <ul class="brands__list">
+            <li class="brands__item">
+              <a class="brands__link" href="swarovski.html">
+                <img src="img/brands/swarovski.jpg" alt="Swarovski">
+                <div class="brands__content">
+                  <h2 class="brands__title">Swarovski</h2><span class="brands__desc">Swarovski AG — австрийская компания, специализирующаяся на производстве рассыпных кристаллов, украшений, кристальных фигурок и огранке синтетических и природных драгоценных камней.</span>
+                </div>
+              </a>
+            </li>
+            <li class="brands__item">
               <a class="brands__link" href="real-techniques.html">
-                <img class="brands__img" src="img/brands/real-techniques.jpg" alt="Real Techniques" />
+                <img src="img/brands/real-techniques.jpg" alt="Real Techniques">
                 <div class="brands__content">
                   <h2 class="brands__title">Real Techniques</h2><span class="brands__desc">Легендарный бренд кистей и аксессуаров для макияжа, созданный сестрами Николь и Саманта Чепмен в коллаборации с Paris Presents.</span>
                 </div>
@@ -168,73 +251,9 @@
             </li>
             <li class="brands__item">
               <a class="brands__link" href="ecotools.html">
-                <img class="brands__img" src="img/brands/ecotools.jpg" alt="EcoTools" />
+                <img src="img/brands/ecotools.jpg" alt="EcoTools">
                 <div class="brands__content">
                   <h2 class="brands__title">EcoTools</h2><span class="brands__desc">Более десяти лет Paris Presents с гордостью продолжают выпускать аутентичные, полностью натуральные продукты, которые помогают женщинам чувствовать себя по-настоящему красивыми.</span>
-                </div>
-              </a>
-            </li>
-            <li class="brands__item">
-              <a class="brands__link" href="revolution-makeup.html">
-                <img class="brands__img" src="img/brands/revolution-makeup.jpg" alt="Revolution Makeup" />
-                <div class="brands__content">
-                  <h2 class="brands__title">Revolution Makeup</h2><span class="brands__desc">Амбициозный бренд из Лондона REVOLUTION Makeup своим появлением на рынке в 2014 году произвёл настоящий бум.</span>
-                </div>
-              </a>
-            </li>
-            <li class="brands__item">
-              <a class="brands__link" href="lv.html">
-                <img class="brands__img" src="img/brands/lv.jpg" alt="LV" />
-                <div class="brands__content">
-                  <h2 class="brands__title">LV</h2><span class="brands__desc">Марка гипоаллергенных средств по уходу за телом и бытовой химии. Все продукты бренда созданы финскими специалистами в сотрудничестве с некоммерческой организацией «Союз против Аллергии и Астмы.</span>
-                </div>
-              </a>
-            </li>
-            <li class="brands__item">
-              <a class="brands__link" href="sebastian.html">
-                <img class="brands__img" src="img/brands/sebastian.jpg" alt="Sebastian" />
-                <div class="brands__content">
-                  <h2 class="brands__title">Sebastian</h2><span class="brands__desc">Профессиональная косметика для волос SEBASTIAN Professional – это общеизвестный торговый бренд, который был создан парой креативных стилистов Джон Себастиан и Джери Кузенца в 1970 году.</span>
-                </div>
-              </a>
-            </li>
-            <li class="brands__item">
-              <a class="brands__link" href="wella-system-professional.html">
-                <img class="brands__img" src="img/brands/wella-system-professional.jpg" alt="Wella System Professional" />
-                <div class="brands__content">
-                  <h2 class="brands__title">Wella System Professional</h2><span class="brands__desc">Немецкий бренд Wella System Professional известен уже более 100 лет. Он предлагает модные инновации для ухода, лечения, стайлинга и преображения локонов.</span>
-                </div>
-              </a>
-            </li>
-            <li class="brands__item">
-              <a class="brands__link" href="ghd.html">
-                <img class="brands__img" src="img/brands/ghd.jpg" alt="GHD" />
-                <div class="brands__content">
-                  <h2 class="brands__title">GHD</h2><span class="brands__desc">Первоклассные изобретения для укладки волос: стайлеры, фены, щипцы и плойки работающие по технологиям, которые позволяют сделать эффектную укладку, не травмируя волосы.</span>
-                </div>
-              </a>
-            </li>
-            <li class="brands__item">
-              <a class="brands__link" href="nioxin.html">
-                <img class="brands__img" src="img/brands/nioxin.jpg" alt="Nioxin" />
-                <div class="brands__content">
-                  <h2 class="brands__title">Nioxin</h2><span class="brands__desc">Продукты, предназначенные для сохранения оздоровления волосяного стержня и избавления кожи от раздражения, снижения негативного эффекта от процедуры окрашивания и закрепления цвета, что позволит уменьшить частоту применения краски.</span>
-                </div>
-              </a>
-            </li>
-            <li class="brands__item">
-              <a class="brands__link" href="zinger.html">
-                <img class="brands__img" src="img/brands/zinger.jpg" alt="Zinger" />
-                <div class="brands__content">
-                  <h2 class="brands__title">Zinger</h2><span class="brands__desc">Изделия марки «Zinger» - это полный набор высококачественных маникюрных и педикюрных инструментов великолепного дизайна, которые давно пользуются заслуженной популярностью во всем мире.</span>
-                </div>
-              </a>
-            </li>
-            <li class="brands__item">
-              <a class="brands__link" href="cellmiin.html">
-                <img class="brands__img" src="img/brands/cellmiin.jpg" alt="Cellmiin" />
-                <div class="brands__content">
-                  <h2 class="brands__title">Cellmiin</h2><span class="brands__desc">Бренд лечебной натуральной косметики Cellmiin был запушен компанией WELCRON HEALTHCARE в 2017 году, когда компания разработала множество различных рецептур по уходу за кожей лица и тела без добавления химических ингредиентов.</span>
                 </div>
               </a>
             </li>
@@ -357,13 +376,13 @@
                 <svg class="contacts__icon">
                   <use xlink:href="./img/sprite.svg#clock"></use>
                 </svg><span class="contacts__title">Работа офиса:</span>
-                <div class="contacts__text">Пн - Пт 09:00 - 18:00</div>
+                <div class="contacts__text">Пн - Пт 10:00 - 18:00</div>
               </li>
               <li class="contacts__item">
                 <svg class="contacts__icon">
                   <use xlink:href="./img/sprite.svg#clock"></use>
                 </svg><span class="contacts__title">Работа склада:</span>
-                <div class="contacts__text">Пн - Пт 09:00 - 20:00</div>
+                <div class="contacts__text">Пн - Пт 10:00 - 20:00</div>
               </li>
             </ul>
           </div>
