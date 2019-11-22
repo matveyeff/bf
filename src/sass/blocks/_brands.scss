@@ -72,9 +72,10 @@
 		}
 	}
 	&__heading {
-		font-size: 1.5rem;
-		font-weight: 500;
-		margin-bottom: $gutter/2;
+		font-size: 1.3125rem;
+		font-weight: 600;
+		margin-bottom: $gutter;
+		text-align: center;
 		&::after {
 			content: '';
 			width: 100px;
