@@ -1,0 +1,17 @@
+.preloader {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9999;
+	background-color: rgba($white, .95);
+	&__img {
+		width: 150px;
+		height: 150px;
+		background: url('../../img/preloader.gif') no-repeat center;
+	}
+}

@@ -30,11 +30,8 @@ close.addEventListener('click', function(e) {
 	menu.style.display = 'flex'
 })
 
-// var cross = document.getElementById('cross');
-
-// cross.addEventListener('click', function() {
-// 	cross.style.display = 'none';
-// 	style.display = 'none';
-// 	hamburger.style.display = 'flex';
-// 	document.getElementById('header').style.position = '';
-// })
+$(window).on('load', function(){
+	$('.preloader').delay(500).fadeOut('slow', function(){
+		$(this).attr('style', 'display: none !important');
+	});
+});
