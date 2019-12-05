@@ -35,3 +35,9 @@ $(window).on('load', function(){
 		$(this).attr('style', 'display: none !important');
 	});
 });
+
+baguetteBox.run('.baguetteBoxThree', {
+	animation: 'fadeIn',
+	noScrollbars: true,
+	captions: false
+});
