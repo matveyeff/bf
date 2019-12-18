@@ -1,8 +1,18 @@
 .page {
 	display: flex;
+
+	@include tablets {
+		flex-direction: column;
+	}
+
 	&__content {
 		flex-basis: 75%;
+
+		@include tablets {
+			flex-basis: 100%;
+		}
 	}
+
 	&__title {
 		font-size: 2rem;
 		font-weight: 600;

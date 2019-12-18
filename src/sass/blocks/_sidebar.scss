@@ -1,10 +1,27 @@
 .sidebar {
+	display: flex;
+	flex-direction: column;
+
+	@include tablets {
+		flex-direction: row;
+	}
+
+	@include phones {
+		flex-direction: column;
+	}
+
 	&__col {
-		margin-bottom: $gutter;
+		margin-bottom: .3125rem;
+
+		@include tablets {
+			flex: 1;
+		}
+
 		&:last-child {
 			margin-bottom: 0;
 		}
 	}
+
 	&__title {
 		font-weight: 500;
 	}

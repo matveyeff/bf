@@ -1,0 +1,15 @@
+.baguetteBoxThree {
+	@include tablets {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__link {
+		@include tablets {
+			max-width: 33%;
+			
+		}
+		@include phones {
+			max-width: 50%;
+		}
+	}
+}
