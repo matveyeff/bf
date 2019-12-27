@@ -24,7 +24,8 @@ const browserSync 			= require('browser-sync').create();
 
 const svgstore 					= require('gulp-svgstore');
 const svgmin 						= require('gulp-svgmin');
-const imagemin 					= require('gulp-imagemin');
+const imagemin 				  = require('gulp-imagemin');
+const imagewebp		      = require('gulp-webp');
 
 const rsync 					  = require('gulp-rsync');
 
@@ -63,9 +64,20 @@ function htmls() {
 
 function images() {
   return gulp.src(paths.src + 'img/**/*.{jpg,jpeg,png,gif,svg,ico}')
-    .pipe(imagemin())
+    .pipe(imagemin([
+      imagemin.gifsicle({interlaced: true}),
+      imagemin.jpegtran({progressive: true}),
+      imagemin.optipng({optimizationLevel: 5})
+    ]))
+  .pipe(gulp.dest(paths.build + 'img/'));
+}
+
+function webp() {
+  return gulp.src(paths.src + 'img/**/*.{jpg,jpeg,png}')
+    .pipe(imagewebp({quality: 50}))
     .pipe(gulp.dest(paths.build + 'img/'));
 }
+
 function favicon() {
   return gulp.src(paths.src + 'favicon.ico')
     .pipe(gulp.dest(paths.build));
@@ -142,6 +154,7 @@ exports.scripts 				= scripts;
 exports.htmls 					= htmls;
 exports.fonts 					= fonts;
 exports.images 					= images;
+exports.webp 					  = webp;
 exports.favicon 				= favicon;
 exports.svgSprite 			= svgSprite;
 exports.clean 					= clean;
@@ -150,7 +163,7 @@ exports.deploy 					= deploy;
 
 gulp.task('default', gulp.series(
   clean,
-  gulp.parallel(styles, svgSprite, scripts, htmls, images, favicon, fonts),
+  gulp.parallel(styles, svgSprite, scripts, htmls, images, webp, favicon, fonts),
   gulp.parallel(watch, serve)
 ));
 

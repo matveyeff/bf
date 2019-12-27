@@ -29,4 +29,6 @@ mixin grid(className)
 			each item in grid
 				li(class=className + '__item')
 					a(class=className + '__link' href=item.url)
-						img(class=className + '__img', src=`img/brandslist/${item.img}`, alt=`${item.title}`)
+						picture
+							source(class=className + '__img', type="image/webp" srcset=`img/brandslist/${item.img + '.webp'}`, alt=`${item.title}`)
+							img(class=className + '__img', src=`img/brandslist/${item.img + '.png'}`, alt=`${item.title}`)

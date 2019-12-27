@@ -10,13 +10,22 @@ block content
 			.slider
 				.slider__item
 					a.slider__link(href="dr-gloderm.html")
-						img.slider__img(src="img/banner-01.jpg" alt="banner")
+						picture
+							source(type="image/webp" srcset="img/banner-01.webp")
+							source(type="image/jpeg" srcset="img/banner-01.jpg")
+							img(src="img/banner-01.jpg" alt="banner")
 				.slider__item
 					a.slider__link(href="dr-gloderm.html")
-						img.slider__img(src="img/banner-02.jpg" alt="banner")
+						picture
+							source(type="image/webp" srcset="img/banner-02.webp")
+							source(type="image/jpeg" srcset="img/banner-02.jpg")
+							img(src="img/banner-02.jpg" alt="banner")
 				.slider__item
 					a.slider__link(href="dr-gloderm.html")
-						img.slider__img(src="img/banner-03.jpg" alt="banner")
+						picture
+							source(type="image/webp" srcset="img/banner-03.webp")
+							source(type="image/jpeg" srcset="img/banner-03.jpg")
+							img(src="img/banner-03.jpg" alt="banner")
 
 	section.section.about
 		.container
@@ -36,7 +45,10 @@ block content
 			.news__wrap
 				.news__list
 					.news__item
-						img.news__img(src="img/news/new-01.jpg", alt="new")
+						picture
+							source(class="news__img" type="image/webp" srcset="img/news/new-01.webp")
+							source(class="news__img" type="image/jpeg" srcset="img/news/new-01.jpg")
+							img(class="news__img" src="img/news/new-01.jpg" alt="new")
 						.news__text
 							h3.news__title Dr.Gloderm: Новое поступление
 							span.news__date 18/09/2019
@@ -44,7 +56,10 @@ block content
 								p Все продукты DR.GLODERM разработаны при участии 54 врачей – дерматологов Южной Кореи*, одобрены и сертифицированы Сеульской Ассоциацией дерматологов. Завод – изготовитель имеет патент на ...
 							a.link(href="#") Подробнее
 					.news__item
-						img.news__img(src="img/news/new-02.jpg", alt="new")
+						picture
+							source(type="image/webp" srcset="img/news/new-02.webp")
+							source(type="image/jpeg" srcset="img/news/new-02.jpg")
+							img(src="img/news/new-02.jpg" alt="new")
 						.news__text
 							h3.news__title 3W Clinic: Снижение цен!
 							span.news__date 23/07/2019
@@ -52,7 +67,10 @@ block content
 								p Ура! Мы рады Вам сообщить о снижении цен на продукцию 3W Clinic. Теперь вкусные десерты для кожи стали доступнее! Побалуйте себя и своих клиентов ароматной, питательной и качественной ...
 							a.link(href="#") Подробнее
 					.news__item
-						img.news__img(src="img/news/new-03.jpg", alt="new")
+						picture
+							source(type="image/webp" srcset="img/news/new-03.webp")
+							source(type="image/jpeg" srcset="img/news/new-03.jpg")
+							img(src="img/news/new-03.jpg" alt="new")
 						.news__text
 							h3.news__title Новый бренд Elizavecca
 							span.news__date 11/04/2019
