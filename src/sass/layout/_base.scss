@@ -12,14 +12,14 @@ html {
 	@include tablets {
 		font-size: 14px;
 	}
-	
+
 	@include phones {
 		font-size: 13px;
 	}
 }
 
 body {
-	font-family: 'Montserrat', Helvetica, Arial, sans-serif;;
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 	width: 100%;
 	min-height: 100%;
 	margin: 0;
