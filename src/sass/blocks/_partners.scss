@@ -14,6 +14,8 @@
 		}
 	}
 	&__pic {
+		display: flex;
+		justify-content: center;
 		flex-basis: 25%;
 		padding: 2rem;
 		margin-right: $gutter*2;
