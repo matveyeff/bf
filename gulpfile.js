@@ -120,8 +120,8 @@ function deploy() {
   return gulp.src('build/**')
   .pipe(rsync({
     root: 'build',
-    hostname: '9162345584@beautyforce.ru',
-    destination: 'domains/beautyforce.ru/',
+    hostname: 'matveyeff@beautyforce.ru',
+    destination: 'beautyforce.ru/html/',
     include: ['*.htaccess'], // Includes files to deploy
 		exclude: ['**/Thumbs.db', '**/*.DS_Store'], // Excludes files from deploy
 		recursive: true,
