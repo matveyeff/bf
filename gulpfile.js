@@ -123,7 +123,8 @@ function deploy() {
     hostname: 'matveyeff@beautyforce.ru',
     destination: 'beautyforce.ru/html/',
     include: ['*.htaccess'], // Includes files to deploy
-		exclude: ['**/Thumbs.db', '**/*.DS_Store'], // Excludes files from deploy
+    exclude: ['**/Thumbs.db', '**/*.DS_Store'], // Excludes files from deploy
+    port: 9999,
 		recursive: true,
 		archive: true,
 		silent: false,
