@@ -92,6 +92,10 @@
 		@include tablets {
 			font-size: 3rem;
 		}
+
+		@include phones {
+			font-size: 2rem;
+		}
 	}
 	&__desc	{
 		font-size: .875rem;
@@ -99,6 +103,10 @@
 
 		@include tablets {
 			font-size: 1.2rem;
+		}
+
+		@include phones {
+			font-size: 1rem;
 		}
 	}
 }
