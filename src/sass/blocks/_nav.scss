@@ -1,7 +1,7 @@
 .nav {
 	display: flex;
 
-	@include phones {
+	@include tablets {
 		display: none;
 		position: fixed;
 		top: 0;
@@ -16,7 +16,7 @@
 	&__list	{
 		display: flex;
 
-		@include phones {
+		@include tablets {
 			flex-direction: column;
 			text-align: center;
 		}

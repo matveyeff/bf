@@ -1,6 +1,10 @@
 .logo {
 	display: flex;
 
+	@include tablets {
+		flex: 1;
+	}
+
 	@include phones {
 		margin: auto;
 	}

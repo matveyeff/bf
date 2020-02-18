@@ -1,7 +1,7 @@
 .mobile-menu {
 	display: none;
 
-	@include phones {
+	@include tablets {
 		display: flex;
 	}
 	&__icon {

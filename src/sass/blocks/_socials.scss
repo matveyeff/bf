@@ -1,6 +1,10 @@
 .socials {
 	display: flex;
 
+	@include tablets {
+		margin-right: $gutter;
+	}
+
 	@include phones {
 		display: none;
 	}
