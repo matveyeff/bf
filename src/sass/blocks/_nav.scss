@@ -25,11 +25,8 @@
 		margin-right: .9375rem;
 
 		@include tablets {
-			margin-bottom: $gutter;
-		}
-
-		@include phones {
 			margin-right: 0;
+			margin-bottom: $gutter;
 		}
 	}
 	&__link {
