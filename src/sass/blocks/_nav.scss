@@ -25,12 +25,11 @@
 		margin-right: .9375rem;
 
 		@include tablets {
-			margin-right: .5714285714285714rem;
+			margin-bottom: $gutter;
 		}
 
 		@include phones {
 			margin-right: 0;
-			margin-bottom: $gutter;
 		}
 	}
 	&__link {
@@ -39,6 +38,10 @@
 		color: $white;
 		position: relative;
 		padding-bottom: 8px;
+
+		@include tablets {
+			font-size: 3rem;
+		}
 
 		@include phones {
 			font-size: 2rem;
@@ -64,9 +67,6 @@
 			&:after {
 				opacity: .7;
 			}
-		}
-		@include tablets {
-			font-size: .8571428571428571rem;
 		}
 	}
 }
