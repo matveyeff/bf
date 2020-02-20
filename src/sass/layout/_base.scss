@@ -73,12 +73,9 @@ h6 {
 
 .container {
 	width: 100%;
-	max-width: 1240px;
+	max-width: 1280px;
 	margin: 0 auto;
-
-	@include tablets {
-		width: 95%;
-	}
+	padding: 0 20px;
 }
 
 .section {
