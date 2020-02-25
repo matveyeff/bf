@@ -23,9 +23,9 @@
         filter: none;
       }
     }
-
+    
     @include tablets {
-      flex-basis: 24%;
+      flex-basis: 15%;
     }
 
     @include phones {
