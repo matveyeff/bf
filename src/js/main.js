@@ -36,6 +36,18 @@ $(window).on('load', function(){
 	});
 });
 
+document.addEventListener('appReady.EappsInstagramFeed', function() {
+	$('.my-instashow').eappsInstagramFeed({
+		api: '/instashow/api/index.php',
+		source: '@beauty_force.ru',
+		width: 'auto',
+		layout: 'grid',
+		columns: 5,
+		rows: 3,
+		lang: 'en'
+	});
+});
+
 baguetteBox.run('.baguetteBoxThree', {
 	animation: 'fadeIn',
 	noScrollbars: true,
