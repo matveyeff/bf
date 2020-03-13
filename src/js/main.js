@@ -42,9 +42,10 @@ document.addEventListener('appReady.EappsInstagramFeed', function() {
 		source: '@beauty_force.ru',
 		width: 'auto',
 		layout: 'grid',
-		columns: 5,
-		rows: 3,
-		lang: 'ru'
+		columns: 4,
+		rows: 2,
+		lang: 'ru',
+		colorGridLoadMoreButton: 'rgb(0, 53, 51)'
 	});
 });
 
