@@ -44,7 +44,7 @@ document.addEventListener('appReady.EappsInstagramFeed', function() {
 		layout: 'grid',
 		columns: 5,
 		rows: 3,
-		lang: 'en'
+		lang: 'ru'
 	});
 });
 
