@@ -6,7 +6,7 @@
 	&__link {
 		@include tablets {
 			max-width: 33%;
-			
+
 		}
 		@include phones {
 			max-width: 50%;

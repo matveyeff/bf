@@ -1,0 +1,15 @@
+.feedback-block {
+	margin: $gutter 0;
+
+	&__list {
+		display: flex;
+	}
+
+	&__item {
+		margin-right: $gutter;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
