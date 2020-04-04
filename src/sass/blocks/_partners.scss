@@ -1,36 +1,42 @@
 .partners {
 	margin: $gutter 0;
 	&__list {
-		display: flex;
-		flex-direction: column;
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		grid-template-rows: repeat(5, 1fr);
+		grid-column-gap: 20px;
+		grid-row-gap: 20px;
+
+		@include tablets {
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: repeat(9, 1fr);
+		}
+
+		@include phones {
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(13, 1fr);
+		}
 	}
 	&__item {
 		display: flex;
 		align-items: center;
-		margin-bottom: $gutter;
+		justify-content: center;
+		border: 1px solid $light;
+
+		&:hover {
+			border: 1px solid $accent;
+		}
 
 		@include phones {
 			flex-direction: column;
 		}
 	}
-	&__pic {
+	&__link {
 		display: flex;
 		justify-content: center;
-		flex-basis: 25%;
-		padding: 2rem;
-		margin-right: $gutter*2;
-
-		@include tablets {
-			flex-basis: 33%;
-			padding: 1rem;
-			margin-right: 1rem;
-		}
-
-		@include phones{
-			max-width: 50%;
-			margin-right: 0;
-			margin-bottom: 1rem;
-		}
+		align-items: center;
+		height: 100%;
+		padding: 3rem;
 	}
 	&__img {
 		width: 100%;
@@ -52,10 +58,6 @@
 		@include phones {
 			font-size: 1.2rem;
 		}
-	}
-
-	&__link {
-		margin-bottom: $gutter;
 	}
 
 	&__text {
