@@ -66,5 +66,9 @@
 		color: $accent;
 		font-size: 14px;
 		line-height: 1.5;
+
+		@include tablets {
+			display: none;
+		}
 	}
 }
