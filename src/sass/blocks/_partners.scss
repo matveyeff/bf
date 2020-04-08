@@ -31,6 +31,12 @@
 				transition: all .15s ease;
 				transform: translateY(60px);
 				opacity: 0;
+
+				@include tablets {
+					transform: none;
+					transition: none;
+					opacity: 1;
+				}
 			}
 			.partners__text {
 				opacity: 1;
