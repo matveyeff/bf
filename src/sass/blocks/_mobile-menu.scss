@@ -3,6 +3,7 @@
 
 	@include tablets {
 		display: flex;
+		margin-left: $gutter;
 	}
 	&__icon {
 		width: 1.5rem;

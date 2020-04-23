@@ -1,6 +1,7 @@
 .mobile-close {
 	display: none;
 	z-index: 11;
+	margin-left: $gutter;
 	&__icon {
 		width: 1.5rem;
 		height: 1.5rem;

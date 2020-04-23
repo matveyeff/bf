@@ -1,0 +1,29 @@
+.lang {
+	&__list {
+		display: flex;
+	}
+	&__item {
+		display: flex;
+
+		&::before {
+			content: '';
+			width: 1px;
+			height: 15px;
+			margin: 0 10px;
+			background-color: #7c8391;
+		}
+
+		&:first-child {
+			&::before {
+				display: none;
+			}
+		}
+	}
+	&__link {
+		max-width: 25px;
+	}
+	&__icon	{
+		display: block;
+		max-height: 15px;
+	}
+}

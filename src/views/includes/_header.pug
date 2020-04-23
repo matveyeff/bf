@@ -2,7 +2,13 @@ header.header
 	.container.header__container
 		a.logo(href="/"): +icon('logo', 'logo__icon')
 		+nav
-		+socials('socials')
+		.header__links
+			+socials('socials')
+			.lang
+				ul.lang__list
+					li.lang__item
+						a.lang__link(href="https://kr.beautyforce.ru" target="_blank")
+							+icon('flag-ko', 'lang__icon')
 		.mobile-menu#menu
 			a.mobile-menu__link(href="#"): +icon('bars', 'mobile-menu__icon')
 		.mobile-close#close
