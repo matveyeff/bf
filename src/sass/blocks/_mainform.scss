@@ -1,0 +1,45 @@
+.mainform {
+	display: flex;
+	flex-direction: column;
+	margin-top: 1.5625‬;
+
+	&__label {
+		font-size: 14px;
+		color: #414141;
+		margin-bottom: 5px;
+	}
+
+	&__input {
+		padding: .8125rem 0 .8125rem 1rem;
+		color: $dark;
+		background-color: #eeeeee;
+		border: none;
+		border-radius: .1875rem;
+		margin-bottom: 15px;
+
+		&:focus {
+			border-radius: .1875rem;
+			outline: 1px solid $accent;
+		}
+	}
+	&__button {
+		display: inline-block;
+		padding: .875rem .9375rem;
+		font-size: 1rem;
+		color: $white;
+		letter-spacing: .045rem;
+		background: linear-gradient(to left, rgba($accent, .9) 0%, rgba(0, 33, 32, 1) 100%);
+		background-color: #65e47d;
+		border: none;
+		border-radius: 3px;
+		box-shadow: 0 2px 0 rgba($accent, .5);
+
+		&:focus {
+			outline: none;
+		}
+
+		&:hover {
+			background: linear-gradient(to left, rgba($accent, 1) 0%, rgba(0, 33, 32, 1) 100%);
+		}
+	}
+}

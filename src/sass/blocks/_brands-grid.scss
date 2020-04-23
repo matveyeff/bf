@@ -1,19 +1,14 @@
 .brands-grid {
   &__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: $gutter/2;
-
-    @include tablets {
-      margin-bottom: $gutter;
-    }
+    display: grid;
+		grid-template-columns: repeat(6,1fr);
+		grid-template-rows: repeat(1,1fr);
+		grid-column-gap: 6px;
+		grid-row-gap: 6px;
+		margin-bottom: 1rem;
   }
   &__item {
     background-color: $white;
-    margin-bottom: $gutter/2;
-    flex-basis: 12%;
     box-shadow: -5px 9px 11px -9px rgba(0,0,0,0.55);
     border-radius: 2px;
     transition: box-shadow $slow;
@@ -23,7 +18,7 @@
         filter: none;
       }
     }
-    
+
     @include tablets {
       flex-basis: 15%;
     }

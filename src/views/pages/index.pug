@@ -36,8 +36,20 @@ block content
 
 	section.section
 		.container
-				+grid('brands-grid')
-				a.link.link_right(href="brands.html") Все бренды
+				.block-brands
+					.block-brands__brands
+						+grid('brands-grid')
+						a.link.link_right(href="brands.html") Все бренды
+					.block-brands__form
+						h3.title Заявка на прайс-лист
+						form.mainform#mainform
+							label(class="mainform__label" for="company") Компания:
+							input(class="mainform__input" type="text"  id="company" required name="company")
+							label(class="mainform__label" for="company") Телефон:
+							input(class="mainform__input" type="tel" id="phone" name="phone")
+							label(class="mainform__label" for="company") Электронная почта:
+							input(class="mainform__input" type="text" required id="email" name="email")
+							button(class="mainform__button" type="submit") Отправить
 
 	section.section.instagram
 		.container
