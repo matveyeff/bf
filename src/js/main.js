@@ -63,13 +63,15 @@ $("#mainform").submit(function () { //устанавливаем событие 
 		data: form_data,
 		success: function () {
 			//код в этом блоке выполняется при успешной отправке сообщения
-			window.location = "thanks.html";
+			document.querySelector('.modal').style.display = 'flex';
 		}
 	});
 	return false;
 });
 
-$('[name="phone"]').click(function () {
-	$(this).setCursorPosition(4);
-});
 $('[name="phone"]').mask("+7 (999) 999-99-99");
+
+document.querySelector('#formbutton').onclick = function() {
+
+	document.querySelector('.modal').style.display = 'none';
+}

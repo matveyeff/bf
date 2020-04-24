@@ -3,9 +3,19 @@
     display: grid;
 		grid-template-columns: repeat(6,1fr);
 		grid-template-rows: repeat(1,1fr);
-		grid-column-gap: 6px;
-		grid-row-gap: 6px;
-		margin-bottom: 1rem;
+		grid-column-gap: 5px;
+		grid-row-gap: 5px;
+    margin-bottom: 1.875rem;
+
+    @media (max-width: 1000px) {
+
+      grid-template-columns: repeat(5,1fr);
+    }
+
+    @media (max-width: 810px) {
+
+      grid-template-columns: repeat(4,1fr);
+    }
   }
   &__item {
     background-color: $white;
