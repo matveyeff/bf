@@ -1,6 +1,6 @@
 <?
 if((isset($_POST['company']))&&(isset($_POST['contface']))&&(isset($_POST['phone']))&&(isset($_POST['email']))){ //Проверка отправилось ли наше поля name и не пустые ли они
-	$to = 'info@beforce.ru,kim@beforce.ru,matveyeff@mail.ru'; //Почта получателя, через запятую можно указать сколько угодно адресов
+	$to = 'info@beforce.ru,kim@beforce.ru'; //Почта получателя, через запятую можно указать сколько угодно адресов
 	$subject = 'Заявка на прайс-лист с сайта beautyforce.ru'; //Заголовок сообщения
 	$message = '
 					<html>

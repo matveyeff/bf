@@ -1,5 +1,6 @@
 header.page-header
-	.page-header__wrap(style="background: url(img/"+image+") no-repeat")
-		.container.page-header__container
-			.page-header__content
-				h1.page-header__title #{h1}
+	picture
+		source(type="image/webp" srcset=`img/${image}.webp`)
+		source(type="image/jpeg" srcset=`img/${image}.jpeg`)
+		img(src=`img/${image}.jpg`, alt=`${h1}`)
+	h1.page-header__title #{h1}

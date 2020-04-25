@@ -394,10 +394,15 @@
     <div class="modal">
       <div class="modal__content">
         <div class="modal__text">Заявка отправлена</div>
-        <div class="modal__subtext">В ближайшее время наши менеджеры свяжуться с вами.</div>
+        <div class="modal__subtext">В ближайшее время наши менеджеры свяжутся с вами.</div>
         <button class="modal__button" id="formbutton" type="submit">Вернуться</button>
       </div>
     </div>
+    <script>
+      document.querySelector('#formbutton').onclick = function() {
+        	document.querySelector('.modal').style.display = 'none';
+        }
+    </script>
     <footer class="footer">
       <div class="container footer__container">
         <div class="footer__col">
@@ -530,7 +535,7 @@
       <div class="preloader__img"></div>
     </div>
   </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
   <script src="/instashow/elfsight-instagram-feed.js"></script>
   <script src="js/script.min.js"></script>
 </body>

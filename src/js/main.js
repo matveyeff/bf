@@ -70,8 +70,3 @@ $("#mainform").submit(function () { //устанавливаем событие 
 });
 
 $('[name="phone"]').mask("+7 (999) 999-99-99");
-
-document.querySelector('#formbutton').onclick = function() {
-
-	document.querySelector('.modal').style.display = 'none';
-}
