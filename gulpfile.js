@@ -65,9 +65,17 @@ function htmls() {
 function images() {
   return gulp.src(paths.src + 'img/**/*.{jpg,jpeg,png,gif,svg,ico}')
     .pipe(imagemin([
-      imagemin.gifsicle({interlaced: true}),
-      imagemin.jpegtran({progressive: true}),
-      imagemin.optipng({optimizationLevel: 5})
+      imagemin.mozjpeg({
+        quality: 75,
+        progressive: true
+      }),
+      imagemin.optipng({optimizationLevel: 5}),
+      imagemin.svgo({
+        plugins: [
+          {removeViewBox: true},
+          {cleanupIDs: false}
+        ]
+      })
     ]))
   .pipe(gulp.dest(paths.build + 'img/'));
 }

@@ -44,11 +44,13 @@ block content
 						h3.title Заявка на прайс-лист
 						form.mainform#mainform
 							label(class="mainform__label" for="company") Компания:
-							input(class="mainform__input" type="text"  id="company" required name="company")
-							label(class="mainform__label" for="company") Телефон:
-							input(class="mainform__input" type="tel" id="phone" name="phone")
-							label(class="mainform__label" for="company") Электронная почта:
-							input(class="mainform__input" type="text" required id="email" name="email")
+							input(class="mainform__input" type="text" id="company" name="company" required)
+							label(class="mainform__label" for="contface") Контактное лицо:
+							input(class="mainform__input" type="text" id="contface" name="contface" required)
+							label(class="mainform__label" for="phone") Телефон:
+							input(class="mainform__input" type="tel" id="phone" name="phone" required)
+							label(class="mainform__label" for="email") Электронная почта:
+							input(class="mainform__input" type="text" id="email" name="email" required)
 							button(class="mainform__button" type="submit") Отправить
 
 	section.section.instagram
