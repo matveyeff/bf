@@ -1,5 +1,9 @@
 .page-contacts {
 	display: flex;
+
+	@media (max-width: 690px) {
+		flex-direction: column;
+	}
 	&__item {
 		margin-bottom: $gutter*2;
 	}
@@ -32,5 +36,13 @@
 		height: 1rem;
 		fill: $dark;
 		margin-right: 5px;
+	}
+	&__form {
+		@extend .block-brands__form;
+		margin-left: 75px;
+
+		@media (max-width: 690px) {
+			margin-left: 0;
+		}
 	}
 }

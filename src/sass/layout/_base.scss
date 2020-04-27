@@ -106,5 +106,6 @@ button {
 
 	@include phones {
 		margin: 0;
+		margin-bottom: $gutter;
 	}
 }

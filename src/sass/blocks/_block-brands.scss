@@ -18,8 +18,11 @@
 	}
 
 	&__form {
-		width: 21.875rem;
-		margin-right: 1.875rem;
+		width: 25rem;
+		height: max-content;
+		padding: 2.1875rem;
+		background-color: rgba(0, 33, 32, .1);
+		border-radius: .3125rem;
 
 		@media (max-width: 1200px) {
 			margin-right: 0;

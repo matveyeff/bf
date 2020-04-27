@@ -1,15 +1,22 @@
 .brands-grid {
   &__list {
     display: grid;
-		grid-template-columns: repeat(6,1fr);
+		grid-template-columns: repeat(5,1fr);
 		grid-template-rows: repeat(1,1fr);
-		grid-column-gap: 5px;
-		grid-row-gap: 5px;
+		grid-column-gap: 15px;
+		grid-row-gap: 15px;
     margin-bottom: 1.875rem;
 
-    @media (max-width: 1000px) {
+
+
+    @media (max-width: 1200px) {
 
       grid-template-columns: repeat(5,1fr);
+    }
+
+    @media (max-width: 992px) {
+
+      grid-template-columns: repeat(4,1fr);
     }
 
     @media (max-width: 810px) {
@@ -19,13 +26,20 @@
   }
   &__item {
     background-color: $white;
-    box-shadow: -5px 9px 11px -9px rgba(0,0,0,0.55);
+    box-shadow: -5px 9px 7px -11px rgba(0,0,0,0.45);
     border-radius: 2px;
     transition: box-shadow $slow;
     &:hover {
-      box-shadow: -5px 9px 11px -9px rgba(0,0,0,0.95);
+      box-shadow: -5px 9px 9px -11px rgba(0,0,0,0.75);
       .brands-grid__img {
         filter: none;
+      }
+    }
+
+    @media (max-width: 992px) {
+
+      &:last-child {
+        display: none;
       }
     }
 

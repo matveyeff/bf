@@ -12,7 +12,7 @@
 	&__input {
 		padding: .8125rem 0 .8125rem 1rem;
 		color: $dark;
-		background-color: #eeeeee;
+		background-color: $white;
 		border: none;
 		border-radius: .1875rem;
 		margin-bottom: 15px;
@@ -20,11 +20,13 @@
 		&:focus {
 			border-radius: .1875rem;
 			outline: 1px solid $accent;
+			outline-offset: initial;
 		}
 	}
 	&__button {
 		display: inline-block;
 		padding: .875rem .9375rem;
+		margin-top: .9375rem;
 		font-size: 1rem;
 		color: $white;
 		letter-spacing: .045rem;
