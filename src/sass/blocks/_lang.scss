@@ -20,10 +20,12 @@
 		}
 	}
 	&__link {
-		max-width: 25px;
+		max-width: 30px;
 	}
 	&__icon	{
 		display: block;
-		max-height: 15px;
+		max-width: 30px;
+		max-height: 19px;
+		border-radius: 1px;
 	}
 }

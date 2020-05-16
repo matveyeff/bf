@@ -56,3 +56,14 @@ block content
 						label(class="mainform__label" for="email") Электронная почта:
 						input(class="mainform__input" type="text" id="email" name="email" required)
 						button(class="mainform__button" type="submit") Отправить
+
+	.modal
+		.modal__content
+			.modal__text Заявка отправлена
+			.modal__subtext В ближайшее время наши менеджеры свяжутся с вами.
+			button.modal__button#formbutton(type="submit") Вернуться
+
+	script.
+		document.querySelector('#formbutton').onclick = function() {
+			document.querySelector('.modal').style.display = 'none';
+		}

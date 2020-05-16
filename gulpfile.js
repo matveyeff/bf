@@ -82,7 +82,7 @@ function images() {
 
 function webp() {
   return gulp.src(paths.src + 'img/**/*.{jpg,jpeg,png}')
-    .pipe(imagewebp({quality: 50}))
+    .pipe(imagewebp({quality: 75}))
     .pipe(gulp.dest(paths.build + 'img/'));
 }
 
