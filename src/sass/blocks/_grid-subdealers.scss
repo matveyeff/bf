@@ -1,0 +1,14 @@
+.grid-subdealers {
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	&__item {
+		flex: 1 0 25%;
+
+		@include tablets {
+			flex: 1 0 50%;
+		}
+	}
+}

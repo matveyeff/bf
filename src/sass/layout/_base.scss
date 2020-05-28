@@ -86,7 +86,15 @@ button {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	padding: $gutter/2 0;
+	padding: 3.4375rem 0;
+
+	&:first-child {
+		padding-top: 0;
+	}
+
+	&_white {
+		background-color: $white;
+	}
 }
 
 .title {

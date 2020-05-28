@@ -1,0 +1,145 @@
+extends ../promo.pug
+
+append config
+	- title = 'Субдилерам | Beautyforce.ru'
+	- h1 = 'Субдилерам'
+	- desc = 'Мы работаем только официально на всех этапах покупки и продажи и обеспечиваем качественные логистические услуги для наших клиентов. Наши менеджеры всегда оперативно ответят на все вопросы клиентов.'
+	-	image	=	'headers/5'
+	- currentURL = 'subdealers.html'
+
+block content
+	.container
+		.breadcrumbs
+			ul.breadcrumbs__list
+				li.breadcrumbs__item
+					a.breadcrumbs__link(href="/") Главная
+				li.breadcrumbs__item Субдилерам
+	main.main
+		section.section
+			.container
+				.subdealers
+					.subdealers__header.header-subdealers
+						img(src="img/logo-gold.png", alt="").header-subdealers__logo
+						.header-subdealers__text Развитие сети субдистрибьютеров и дилеров на территории России и стран СНГ
+
+				h2.page__title О компании
+
+				p Наша компания работает с 2010 года на рынке косметики в России и странах СНГ. На данный момент в компании 10 брендов корейской косметики на эксклюзиве. Данные бренды относятся к категориям уход за лицом, сегментов массмаркет, средний и премиум. Это значит, что каждый наш клиент найдет для себя подходящий бренд для развития. Мы самостоятельно импортируем и сертифицируем все продукты брендов. Вся косметика завезена официально, растаможена и цены включают НДС.
+
+				p В 2020 году мы приняли решение развивать дилерскую сеть региональных дистрибьютеров, чтобы обеспечить полное покрытие всех регионов России и стран СНГ. Мы готовы помогать, развивать и улучшать работу своего дилера. Мы находимся в постоянном развитии категорий и ищем интересные корейские бренды. До 2020 года в портфолио будет более 15 новых брендов к уже имеющимся.
+
+				p Кого мы ищем? Ищем единомышленников-дистрибьютеров в регионах России и странах СНГ, которые умеют продавать корейские бренды, любят качественную косметику, постоянно развиваются и открыты ко всему новому.
+
+				p Будем рады плодотворному и взаимовыгодному сотрудничеству!
+
+		section.section.section_white
+			.container
+				h2.page__title Наши бренды
+
+				.subdealers__grid.grid-subdealers
+					ul.grid-subdealers__list
+						li.grid-subdealers__item
+							img.grid-subdealers__img(src="img/subdealers/1foundation.jpg", alt="")
+						li.grid-subdealers__item
+							img.grid-subdealers__img(src="img/subdealers/cellmiin.jpg", alt="")
+						li.grid-subdealers__item
+							img.grid-subdealers__img(src="img/subdealers/yejimiin.jpg", alt="")
+						li.grid-subdealers__item
+							img.grid-subdealers__img(src="img/subdealers/dr-gloderm.jpg", alt="")
+						li.grid-subdealers__item
+							img.grid-subdealers__img(src="img/subdealers/foreverskin.jpg", alt="")
+						li.grid-subdealers__item
+							img.grid-subdealers__img(src="img/subdealers/swarovski.jpg", alt="")
+						li.grid-subdealers__item
+							img.grid-subdealers__img(src="img/subdealers/dearboo.jpg", alt="")
+						li.grid-subdealers__item
+							img.grid-subdealers__img(src="img/subdealers/haruharu.jpg", alt="")
+
+		section.section
+			.container
+				h2.page__title Маркетинг и производство контента
+
+				.subdealers__left-side
+					.subdealers__content
+						h3.subdealers__content-title Мы предоставляем качественный контент:
+						ol.page-list.subdealers__list
+							li.page-list__item Фотографии товаров в 3-х ракурсах
+							li.page-list__item Короткие видео по каждому продукту
+							li.page-list__item Расширенное и полное описание каждого товара с анализом состава
+							li.page-list__item Имиджевые/рекламные фотографии
+							li.page-list__item Баннеры под любой формат
+							li.page-list__item Презентации по брендам и продуктам
+
+				.subdealers__right-side
+					.subdealers__content
+						h3.subdealers__content-title Важно – маркетинг:
+						ol.page-list.subdealers__list
+							li.page-list__item Имеем опыт развития брендов «с нуля»
+							li.page-list__item Имеем собственное подразделение, занимающееся продвижением брендов (PR, SMM)
+							li.page-list__item Обучаем онлайн по всем брендам/продуктам/новинкам
+							li.page-list__item Предоставляем POS-материалы
+							li.page-list__item Предоставляем пробники/тестеры/подарки для клиентов
+							li.page-list__item Разрабатываем маркетинг-план под индивидуальные потребности
+
+		section.section.section_white
+			.container
+				h2.page__title Логистика, коммерция и мотивация
+
+				.subdealers__features
+					ol.page-list.subdealers__list
+						li.page-list__item Ваша наценка до #[strong 120%]
+						li.page-list__item Цены включают НДС
+						li.page-list__item #[strong Ретро-бонус] за объем продаж
+
+					ol.page-list.subdealers__list
+						li.page-list__item Минимальный заказ #[strong 30 000 рублей]
+						li.page-list__item #[strong Бесплатная доставка] заказов от 50 000 до 150 000 рублей в зависимости от региона
+						li.page-list__item Отгружаем в течении #[strong 3-х к/дней]
+
+					ol.page-list.subdealers__list
+						li.page-list__item Вся продукция #[strong сертифицирована]
+						li.page-list__item #[strong Мотивация] персонала магазинов и других точек продаж
+						li.page-list__item #[strong Срок годности] не менее 50% от общего срока годности
+						li.page-list__item Все стикеры соответствуют требованиям законодательства
+						li.page-list__item Регулируем и #[strong контролируем ценовую политику] в каждом отдельно взятом канале сбыта
+						li.page-list__item Высокий уровень #[strong сервиса], четкий отлаженный механизм по работе с клиентами
+						li.page-list__item Удобное размещение офиса и склада в Москве
+
+		section.section
+			.container
+				h2.page__title Контакты
+
+				.subdealers__contacts.contacts-subdealers
+					.contacts-subdealers__text
+						ul.contacts-subdealers__list
+							li.contacts-subdealers__item ООО «БЬЮТИ ФОРС»
+							li.contacts-subdealers__item Россия, Москва, Павловская улица, д. 7, стр. 4
+							li.contacts-subdealers__item
+								a.contacts-subdealers__link(href="tel:+74994092180") +7-499-409-21-80
+							li.contacts-subdealers__item
+								a.contacts-subdealers__link(href="mailto:info@beforce.ru") info@beforce.ru
+						p #[strong Наша команда ценит качество, хороший сервис и надежное партнерство!]
+
+					.block-brands__form
+						h3.title Заявка на сотрудничество
+						form.mainform#mainform
+							label(class="mainform__label" for="company") Компания:
+							input(class="mainform__input" type="text" id="company" name="company" required)
+							label(class="mainform__label" for="contface") Контактное лицо:
+							input(class="mainform__input" type="text" id="contface" name="contface" required)
+							label(class="mainform__label" for="phone") Телефон:
+							input(class="mainform__input" type="tel" id="phone" name="phone" required)
+							label(class="mainform__label" for="email") Электронная почта:
+							input(class="mainform__input" type="text" id="email" name="email" required)
+							button(class="mainform__button" type="submit") Отправить
+
+		.modal
+			.modal__content
+				.modal__text Заявка отправлена
+				.modal__subtext В ближайшее время наши менеджеры свяжутся с вами.
+				button.modal__button#formbutton(type="submit") Вернуться
+
+		script.
+			document.querySelector('#formbutton').onclick = function() {
+				document.querySelector('.modal').style.display = 'none';
+			}

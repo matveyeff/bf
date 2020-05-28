@@ -1,0 +1,23 @@
+.contacts-subdealers {
+	display: flex;
+	color: $dark;
+	justify-content: space-between;
+
+	@include tablets {
+		flex-direction: column;
+	}
+	&__item {
+		margin-bottom: $gutter;
+		font-size: 1.25rem;
+		font-weight: 700;
+	}
+	&__link {
+		color: $dark;
+		text-decoration: underline;
+	}
+	&__text {
+		@include tablets {
+			margin-bottom: $gutter;
+		}
+	}
+}

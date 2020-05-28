@@ -1,0 +1,49 @@
+.subdealers {
+	margin-bottom: $gutter*2;
+	&__header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background-color: #231c45;
+		height: 500px;
+	}
+	&__left-side {
+		margin-top: 3.4375rem;
+
+		@include tablets {
+			margin-left: 2rem;
+		}
+	}
+	&__right-side {
+		margin-top: 3.4375rem;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+
+		@include tablets {
+			align-items: flex-start;
+			margin-left: 2rem;
+		}
+	}
+	&__content-title {
+		font-size: 1.3125rem;
+		font-weight: 700;
+		color: $dark;
+	}
+	&__list {
+		position: relative;
+		&::before {
+			content: '';
+			width: .4375rem;
+			height: 100%;
+			display: block;
+			position: absolute;
+			left: -2rem;
+			background-color: $accent;
+		}
+	}
+	&__features {
+		margin-top: 3.4375rem;
+	}
+}

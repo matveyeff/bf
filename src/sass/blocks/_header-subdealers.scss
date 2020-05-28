@@ -1,0 +1,16 @@
+.header-subdealers {
+	&__logo	{
+		max-width: 15.625rem;
+	}
+	&__text {
+		max-width: 850px;
+		color: #c49466;
+		font-size: 1.75rem;
+		font-weight: 700;
+		text-align: center;
+
+		@include tablets {
+			font-size: 1.5rem;
+		}
+	}
+}
