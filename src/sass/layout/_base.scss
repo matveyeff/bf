@@ -95,6 +95,10 @@ button {
 	&_white {
 		background-color: $white;
 	}
+
+	&_short {
+		padding: 1.875rem 0;
+	}
 }
 
 .title {
