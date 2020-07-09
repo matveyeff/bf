@@ -1,0 +1,81 @@
+.instagram {
+	margin: $gutter 0;
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		flex-basis: 25%;
+
+		@include tablets {
+			flex-basis: 50%;
+		}
+
+		@include phones {
+			flex-basis: 100%;
+
+			&:nth-child(5),
+			&:nth-child(6),
+			&:nth-child(7),
+			&:nth-child(8) {
+				display: none;
+			}
+		}
+	}
+
+	&__link {
+		position: relative;
+		display: block;
+		overflow: hidden;
+
+		picture {
+			transition: all 1s ease;
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			background-color: rgba($accent, .7);
+			opacity: 0;
+			z-index: 10;
+			transition: all .45s ease;
+		}
+
+		&:hover {
+			&::before {
+				opacity: 1;
+			}
+
+			picture {
+				display: block;
+				transform: scale(1.08) rotate(2deg);
+			}
+
+			.instagram__link-btn {
+				opacity: 1;
+			}
+		}
+	}
+
+	&__link-btn {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 15;
+		color: $white;
+		font-size: 13px;
+		border: 1px solid $white;
+		padding: 10px 17px;
+		border-radius: 2px;
+		opacity: 0;
+		transition: all .65s ease;
+
+	}
+}
