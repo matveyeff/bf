@@ -1,5 +1,5 @@
 .instagram {
-	margin: $gutter 0;
+	margin-top: $gutter;
 
 	&__list {
 		display: flex;
@@ -14,8 +14,6 @@
 		}
 
 		@include phones {
-			flex-basis: 100%;
-
 			&:nth-child(5),
 			&:nth-child(6),
 			&:nth-child(7),
