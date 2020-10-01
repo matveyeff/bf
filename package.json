@@ -9,8 +9,8 @@
   "author": "Dmitrii Matveev",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.26.7",
-    "del": "^5.1.0",
+    "browser-sync": "^2.26.12",
+    "del": "^6.0.0",
     "fs": "0.0.2",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
